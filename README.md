@@ -12,19 +12,47 @@ A command-line tool for practicing coding challenges locally. Write solutions in
 
 ## Installation
 
-### Install from releases (recommended)
+### Quick install (recommended)
+
+**One-line installer (Linux/macOS):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/crisecheverria/codequest/main/install.sh | bash
+```
+
+### Manual install from releases
 
 Download the latest binary from the [releases page](https://github.com/crisecheverria/codequest/releases):
 
+**For macOS (Intel):**
 ```bash
-# For Linux/macOS
-curl -L https://github.com/crisecheverria/codequest/releases/latest/download/codequest-$(uname -s)-$(uname -m) -o codequest
+curl -L https://github.com/crisecheverria/codequest/releases/latest/download/codequest-darwin-amd64 -o codequest
 chmod +x codequest
 sudo mv codequest /usr/local/bin/
-
-# For Windows
-# Download codequest-windows-amd64.exe and add it to your PATH
 ```
+
+**For macOS (M1/M2):**
+```bash
+curl -L https://github.com/crisecheverria/codequest/releases/latest/download/codequest-darwin-arm64 -o codequest
+chmod +x codequest
+sudo mv codequest /usr/local/bin/
+```
+
+**For Linux (AMD64):**
+```bash
+curl -L https://github.com/crisecheverria/codequest/releases/latest/download/codequest-linux-amd64 -o codequest
+chmod +x codequest
+sudo mv codequest /usr/local/bin/
+```
+
+**For Linux (ARM64):**
+```bash
+curl -L https://github.com/crisecheverria/codequest/releases/latest/download/codequest-linux-arm64 -o codequest
+chmod +x codequest
+sudo mv codequest /usr/local/bin/
+```
+
+**For Windows:**
+Download [codequest-windows-amd64.exe](https://github.com/crisecheverria/codequest/releases/latest/download/codequest-windows-amd64.exe) and add it to your PATH.
 
 ### Install from source
 
