@@ -1,0 +1,43 @@
+# Binaries
+codequest
+codequest-*
+*.exe
+
+# Go build artifacts
+*.o
+*.a
+*.so
+
+# Test and development scripts
+*.sh
+
+# Coverage files
+*.out
+coverage.html
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Challenge workspaces (created by fetch command)
+challenge-*/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Go module download cache
+go.sum.backup

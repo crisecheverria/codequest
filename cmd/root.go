@@ -7,16 +7,16 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "codequest",
-	Short: "CodeQuest CLI - Interactive coding challenges in your terminal",
+	Use:     "codequest",
+	Version: "v1.0.0",
+	Short:   "CodeQuest CLI - Interactive coding challenges in your terminal",
 	Long: `CodeQuest CLI allows you to fetch, solve, and submit coding challenges 
-directly from your terminal with local Docker execution.
+directly from your terminal with native language execution.
 
 Examples:
   codequest list                    # List available challenges
   codequest fetch two-sum           # Fetch a specific challenge
-  codequest solve two-sum.ts        # Test your solution locally
-  codequest submit                  # Submit to remote platform`,
+  codequest test                    # Test your solution locally`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Welcome to CodeQuest CLI!")
 		fmt.Println("Use 'codequest --help' to see available commands.")
