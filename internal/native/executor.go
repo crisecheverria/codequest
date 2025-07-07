@@ -46,6 +46,8 @@ func (e *Executor) ExecuteCode(language, code string, timeLimit int) (*Execution
 		executor = &GoExecutor{workDir: e.workDir}
 	case "javascript", "typescript":
 		executor = &NodeExecutor{workDir: e.workDir}
+	case "python":
+		executor = &PythonExecutor{workDir: e.workDir}
 	default:
 		return nil, fmt.Errorf("unsupported language: %s", language)
 	}
@@ -206,4 +208,65 @@ func transpileTypeScript(code string) string {
 	jsCode = strings.ReplaceAll(jsCode, ": boolean[]", "")
 	
 	return jsCode
+}
+
+// PythonExecutor implements Python code execution
+type PythonExecutor struct {
+	workDir string
+}
+
+func (p *PythonExecutor) CheckAvailability() error {
+	_, err := exec.LookPath("python3")
+	if err != nil {
+		// Try fallback to python
+		_, err = exec.LookPath("python")
+		if err != nil {
+			return fmt.Errorf("Python runtime not found. Please install Python from https://python.org/downloads/")
+		}
+	}
+	return nil
+}
+
+func (p *PythonExecutor) Execute(ctx context.Context, code string) (*ExecutionResult, error) {
+	// Create a unique subdirectory for this execution
+	execDir := filepath.Join(p.workDir, fmt.Sprintf("python-%d", time.Now().UnixNano()))
+	if err := os.MkdirAll(execDir, 0755); err != nil {
+		return nil, fmt.Errorf("failed to create execution directory: %w", err)
+	}
+	defer os.RemoveAll(execDir)
+
+	// Write code to solution.py
+	pyFile := filepath.Join(execDir, "solution.py")
+	if err := os.WriteFile(pyFile, []byte(code), 0644); err != nil {
+		return nil, fmt.Errorf("failed to write Python code: %w", err)
+	}
+
+	// Try python3 first, then python
+	var cmd *exec.Cmd
+	if _, err := exec.LookPath("python3"); err == nil {
+		cmd = exec.CommandContext(ctx, "python3", "solution.py")
+	} else {
+		cmd = exec.CommandContext(ctx, "python", "solution.py")
+	}
+	cmd.Dir = execDir
+
+	output, err := cmd.CombinedOutput()
+	outputStr := string(output)
+
+	result := &ExecutionResult{
+		Success:  err == nil,
+		Output:   outputStr,
+		ExitCode: 0,
+	}
+
+	if err != nil {
+		if exitError, ok := err.(*exec.ExitError); ok {
+			result.ExitCode = exitError.ExitCode()
+		} else {
+			result.ExitCode = 1
+		}
+		result.Error = err.Error()
+	}
+
+	return result, nil
 }

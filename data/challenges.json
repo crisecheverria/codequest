@@ -2566,5 +2566,731 @@
     "conceptTags": ["http-go", "concurrency", "web-scraping"],
     "timeLimit": 15000,
     "memoryLimit": 128
+  },
+  {
+    "title": "Python Variables and Types",
+    "description": "Create a function that demonstrates Python's basic data types and returns a formatted string.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-variables-types",
+    "functionName": "demonstrate_types",
+    "parameterTypes": [],
+    "returnType": "str",
+    "template": "def demonstrate_types():\n    # Create variables of different types\n    # Return formatted string: \"int: 42, float: 3.14, bool: True, str: hello\"\n    pass",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "int: 42, float: 3.14, bool: True, str: hello",
+        "description": "should demonstrate basic Python types"
+      }
+    ],
+    "conceptTags": ["variables", "types"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python List Operations",
+    "description": "Create a function that performs basic list operations and returns the sum of all elements.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-list-operations",
+    "functionName": "list_sum",
+    "parameterTypes": ["list"],
+    "returnType": "int",
+    "template": "def list_sum(numbers):\n    # Calculate the sum of all numbers in the list\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4, 5]],
+        "expected": 15,
+        "description": "should sum all numbers in list"
+      },
+      {
+        "input": [[-1, 0, 1]],
+        "expected": 0,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [[]],
+        "expected": 0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["lists", "iteration"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Dictionary Operations",
+    "description": "Create a function that counts the frequency of each character in a string using a dictionary.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-dict-char-count",
+    "functionName": "count_characters",
+    "parameterTypes": ["str"],
+    "returnType": "dict",
+    "template": "def count_characters(text):\n    # Count frequency of each character in the string\n    # Return dictionary with character as key and count as value\n    pass",
+    "testCases": [
+      {
+        "input": ["hello"],
+        "expected": {"h": 1, "e": 1, "l": 2, "o": 1},
+        "description": "should count character frequencies"
+      },
+      {
+        "input": ["aaa"],
+        "expected": {"a": 3},
+        "description": "should handle repeated characters"
+      },
+      {
+        "input": [""],
+        "expected": {},
+        "description": "should handle empty string"
+      }
+    ],
+    "conceptTags": ["dictionaries", "strings"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python List Comprehension",
+    "description": "Use list comprehension to create a list of squares of even numbers from 1 to n.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-list-comprehension",
+    "functionName": "even_squares",
+    "parameterTypes": ["int"],
+    "returnType": "list",
+    "template": "def even_squares(n):\n    # Return list of squares of even numbers from 1 to n\n    # Use list comprehension\n    pass",
+    "testCases": [
+      {
+        "input": [10],
+        "expected": [4, 16, 36, 64, 100],
+        "description": "should return squares of even numbers 1-10"
+      },
+      {
+        "input": [5],
+        "expected": [4, 16],
+        "description": "should return squares of even numbers 1-5"
+      },
+      {
+        "input": [1],
+        "expected": [],
+        "description": "should handle small range"
+      }
+    ],
+    "conceptTags": ["list-comprehension", "loops"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Function with Default Arguments",
+    "description": "Create a function that calculates the area of a rectangle with optional height parameter.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-default-args",
+    "functionName": "rectangle_area",
+    "parameterTypes": ["float", "float"],
+    "returnType": "float",
+    "template": "def rectangle_area(width, height=1.0):\n    # Calculate area of rectangle\n    # height defaults to 1.0 if not provided\n    pass",
+    "testCases": [
+      {
+        "input": [5.0, 3.0],
+        "expected": 15.0,
+        "description": "should calculate area with both parameters"
+      },
+      {
+        "input": [4.0],
+        "expected": 4.0,
+        "description": "should use default height"
+      },
+      {
+        "input": [2.5, 2.0],
+        "expected": 5.0,
+        "description": "should handle decimal values"
+      }
+    ],
+    "conceptTags": ["functions", "default-parameters"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python String Methods",
+    "description": "Create a function that formats a name properly using string methods.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-string-methods",
+    "functionName": "format_name",
+    "parameterTypes": ["str"],
+    "returnType": "str",
+    "template": "def format_name(name):\n    # Format name to proper case (first letter uppercase, rest lowercase)\n    # Remove leading/trailing whitespace\n    pass",
+    "testCases": [
+      {
+        "input": ["  john doe  "],
+        "expected": "John Doe",
+        "description": "should format name properly"
+      },
+      {
+        "input": ["ALICE SMITH"],
+        "expected": "Alice Smith",
+        "description": "should handle uppercase"
+      },
+      {
+        "input": ["bob"],
+        "expected": "Bob",
+        "description": "should handle single name"
+      }
+    ],
+    "conceptTags": ["strings", "methods"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Lambda and Filter",
+    "description": "Use lambda functions and filter to find all palindromes in a list of strings.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-lambda-filter",
+    "functionName": "find_palindromes",
+    "parameterTypes": ["list"],
+    "returnType": "list",
+    "template": "def find_palindromes(words):\n    # Find all palindromes in the list using lambda and filter\n    # A palindrome reads the same forwards and backwards\n    pass",
+    "testCases": [
+      {
+        "input": [["racecar", "hello", "level", "world", "madam"]],
+        "expected": ["racecar", "level", "madam"],
+        "description": "should find palindromes"
+      },
+      {
+        "input": [["python", "java", "go"]],
+        "expected": [],
+        "description": "should return empty list if no palindromes"
+      },
+      {
+        "input": [["a", "aa", "aba"]],
+        "expected": ["a", "aa", "aba"],
+        "description": "should handle single and double character palindromes"
+      }
+    ],
+    "conceptTags": ["lambda", "filter", "strings"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Class and Methods",
+    "description": "Create a BankAccount class with deposit, withdraw, and get_balance methods.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-class-methods",
+    "functionName": "create_account",
+    "parameterTypes": ["float"],
+    "returnType": "float",
+    "template": "class BankAccount:\n    def __init__(self, initial_balance=0.0):\n        # Initialize account with initial balance\n        pass\n    \n    def deposit(self, amount):\n        # Add amount to balance\n        pass\n    \n    def withdraw(self, amount):\n        # Subtract amount from balance (don't allow negative balance)\n        pass\n    \n    def get_balance(self):\n        # Return current balance\n        pass\n\ndef create_account(initial_balance):\n    # Create account, deposit 100, withdraw 30, return final balance\n    account = BankAccount(initial_balance)\n    account.deposit(100)\n    account.withdraw(30)\n    return account.get_balance()",
+    "testCases": [
+      {
+        "input": [50.0],
+        "expected": 120.0,
+        "description": "should handle deposit and withdrawal"
+      },
+      {
+        "input": [0.0],
+        "expected": 70.0,
+        "description": "should handle zero initial balance"
+      },
+      {
+        "input": [25.5],
+        "expected": 95.5,
+        "description": "should handle decimal amounts"
+      }
+    ],
+    "conceptTags": ["classes", "methods", "oop"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Exception Handling",
+    "description": "Create a function that safely divides two numbers and handles division by zero.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-exception-handling",
+    "functionName": "safe_divide",
+    "parameterTypes": ["float", "float"],
+    "returnType": "str",
+    "template": "def safe_divide(a, b):\n    # Safely divide a by b\n    # Return \"Error: Division by zero\" if b is 0\n    # Return the result as a string otherwise\n    pass",
+    "testCases": [
+      {
+        "input": [10.0, 2.0],
+        "expected": "5.0",
+        "description": "should divide normally"
+      },
+      {
+        "input": [5.0, 0.0],
+        "expected": "Error: Division by zero",
+        "description": "should handle division by zero"
+      },
+      {
+        "input": [7.0, 3.0],
+        "expected": "2.3333333333333335",
+        "description": "should handle decimal results"
+      }
+    ],
+    "conceptTags": ["exceptions", "error-handling"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python File I/O Simulation",
+    "description": "Simulate file operations by processing a list of lines and counting words.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-file-io",
+    "functionName": "count_words_in_lines",
+    "parameterTypes": ["list"],
+    "returnType": "int",
+    "template": "def count_words_in_lines(lines):\n    # Count total number of words in all lines\n    # Words are separated by spaces\n    pass",
+    "testCases": [
+      {
+        "input": [["Hello world", "Python is great", "Coding is fun"]],
+        "expected": 7,
+        "description": "should count words in multiple lines"
+      },
+      {
+        "input": [["", "  ", "one word"]],
+        "expected": 2,
+        "description": "should handle empty and whitespace lines"
+      },
+      {
+        "input": [[]],
+        "expected": 0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["file-io", "strings", "loops"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Decorator",
+    "description": "Create a decorator that times the execution of a function.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-decorator",
+    "functionName": "timed_function",
+    "parameterTypes": ["int"],
+    "returnType": "str",
+    "template": "import time\n\ndef timer_decorator(func):\n    # Decorator that times function execution\n    def wrapper(*args, **kwargs):\n        # Time the function execution and return \"Executed in X seconds\"\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        execution_time = end_time - start_time\n        return f\"Executed in {execution_time:.6f} seconds\"\n    return wrapper\n\n@timer_decorator\ndef slow_function(n):\n    # Simulate work by sleeping for n/1000 seconds\n    time.sleep(n / 1000)\n    return \"Done\"\n\ndef timed_function(milliseconds):\n    # Call the decorated function\n    return slow_function(milliseconds)",
+    "testCases": [
+      {
+        "input": [100],
+        "expected": "Executed in 0.100000 seconds",
+        "description": "should time function execution",
+        "testFunction": "import re\ndef test_result(result):\n    # Check if result matches pattern\n    pattern = r'Executed in \\d+\\.\\d{6} seconds'\n    return bool(re.match(pattern, result))"
+      }
+    ],
+    "conceptTags": ["decorators", "functions", "time"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Generator",
+    "description": "Create a generator that yields Fibonacci numbers up to n.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-generator",
+    "functionName": "fibonacci_generator",
+    "parameterTypes": ["int"],
+    "returnType": "list",
+    "template": "def fibonacci_up_to(n):\n    # Generator that yields Fibonacci numbers up to n\n    a, b = 0, 1\n    while a <= n:\n        yield a\n        a, b = b, a + b\n\ndef fibonacci_generator(n):\n    # Return list of Fibonacci numbers up to n\n    return list(fibonacci_up_to(n))",
+    "testCases": [
+      {
+        "input": [20],
+        "expected": [0, 1, 1, 2, 3, 5, 8, 13],
+        "description": "should generate Fibonacci numbers up to 20"
+      },
+      {
+        "input": [1],
+        "expected": [0, 1, 1],
+        "description": "should handle small values"
+      },
+      {
+        "input": [0],
+        "expected": [0],
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": ["generators", "fibonacci", "iteration"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Set Operations",
+    "description": "Find common elements between two lists using set operations.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-set-operations",
+    "functionName": "find_common_elements",
+    "parameterTypes": ["list", "list"],
+    "returnType": "list",
+    "template": "def find_common_elements(list1, list2):\n    # Find common elements between two lists using sets\n    # Return sorted list of common elements\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], [3, 4, 5, 6]],
+        "expected": [3, 4],
+        "description": "should find common elements"
+      },
+      {
+        "input": [["a", "b", "c"], ["c", "d", "e"]],
+        "expected": ["c"],
+        "description": "should work with strings"
+      },
+      {
+        "input": [[1, 2, 3], [4, 5, 6]],
+        "expected": [],
+        "description": "should return empty list when no common elements"
+      }
+    ],
+    "conceptTags": ["sets", "lists", "operations"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Regular Expressions",
+    "description": "Use regex to extract all email addresses from a text string.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-regex",
+    "functionName": "extract_emails",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import re\n\ndef extract_emails(text):\n    # Extract all email addresses from text using regex\n    # Return list of email addresses\n    pass",
+    "testCases": [
+      {
+        "input": ["Contact us at info@example.com or support@test.org"],
+        "expected": ["info@example.com", "support@test.org"],
+        "description": "should extract multiple email addresses"
+      },
+      {
+        "input": ["My email is john.doe@company.net"],
+        "expected": ["john.doe@company.net"],
+        "description": "should handle dots in email"
+      },
+      {
+        "input": ["No emails here!"],
+        "expected": [],
+        "description": "should return empty list when no emails"
+      }
+    ],
+    "conceptTags": ["regex", "strings", "pattern-matching"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python JSON Processing",
+    "description": "Parse JSON data and extract specific information.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-json",
+    "functionName": "extract_names",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import json\n\ndef extract_names(json_string):\n    # Parse JSON string and extract all 'name' fields\n    # Return list of names\n    pass",
+    "testCases": [
+      {
+        "input": ["{\"users\": [{\"name\": \"Alice\", \"age\": 30}, {\"name\": \"Bob\", \"age\": 25}]}"],
+        "expected": ["Alice", "Bob"],
+        "description": "should extract names from JSON"
+      },
+      {
+        "input": ["{\"person\": {\"name\": \"Charlie\", \"city\": \"NYC\"}}"],
+        "expected": ["Charlie"],
+        "description": "should handle single object"
+      },
+      {
+        "input": ["{\"data\": []}"],
+        "expected": [],
+        "description": "should handle empty data"
+      }
+    ],
+    "conceptTags": ["json", "parsing", "data-processing"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Sorting and Lambda",
+    "description": "Sort a list of dictionaries by a specific key using lambda.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-sorting-lambda",
+    "functionName": "sort_by_age",
+    "parameterTypes": ["list"],
+    "returnType": "list",
+    "template": "def sort_by_age(people):\n    # Sort list of dictionaries by 'age' key using lambda\n    # Return sorted list\n    pass",
+    "testCases": [
+      {
+        "input": [[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}, {"name": "Charlie", "age": 35}]],
+        "expected": [{"name": "Bob", "age": 25}, {"name": "Alice", "age": 30}, {"name": "Charlie", "age": 35}],
+        "description": "should sort by age"
+      },
+      {
+        "input": [[{"name": "John", "age": 40}]],
+        "expected": [{"name": "John", "age": 40}],
+        "description": "should handle single item"
+      },
+      {
+        "input": [[]],
+        "expected": [],
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["sorting", "lambda", "dictionaries"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Inheritance",
+    "description": "Create a class hierarchy with inheritance and method overriding.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-inheritance",
+    "functionName": "create_animals",
+    "parameterTypes": [],
+    "returnType": "list",
+    "template": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    \n    def speak(self):\n        return f\"{self.name} makes a sound\"\n\nclass Dog(Animal):\n    def speak(self):\n        return f\"{self.name} barks\"\n\nclass Cat(Animal):\n    def speak(self):\n        return f\"{self.name} meows\"\n\ndef create_animals():\n    # Create a Dog named \"Buddy\" and a Cat named \"Whiskers\"\n    # Return list of their speak() method results\n    pass",
+    "testCases": [
+      {
+        "input": [],
+        "expected": ["Buddy barks", "Whiskers meows"],
+        "description": "should demonstrate inheritance and method overriding"
+      }
+    ],
+    "conceptTags": ["inheritance", "classes", "oop"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Context Manager",
+    "description": "Create a simple context manager for resource management.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-context-manager",
+    "functionName": "use_resource",
+    "parameterTypes": ["str"],
+    "returnType": "str",
+    "template": "class ResourceManager:\n    def __init__(self, resource_name):\n        self.resource_name = resource_name\n        self.resource = None\n    \n    def __enter__(self):\n        self.resource = f\"Acquired {self.resource_name}\"\n        return self.resource\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        self.resource = None\n        return False\n\ndef use_resource(resource_name):\n    # Use the ResourceManager context manager\n    # Return the resource that was acquired\n    pass",
+    "testCases": [
+      {
+        "input": ["Database"],
+        "expected": "Acquired Database",
+        "description": "should use context manager"
+      },
+      {
+        "input": ["File Handle"],
+        "expected": "Acquired File Handle",
+        "description": "should work with different resource names"
+      }
+    ],
+    "conceptTags": ["context-managers", "resource-management", "with-statement"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Asyncio Basics",
+    "description": "Create a simple asynchronous function using async/await.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-asyncio",
+    "functionName": "async_operation",
+    "parameterTypes": ["int"],
+    "returnType": "str",
+    "template": "import asyncio\n\nasync def async_task(delay):\n    # Simulate async work by sleeping for delay milliseconds\n    await asyncio.sleep(delay / 1000)\n    return f\"Task completed after {delay}ms\"\n\ndef async_operation(delay):\n    # Run the async task and return result\n    return asyncio.run(async_task(delay))",
+    "testCases": [
+      {
+        "input": [100],
+        "expected": "Task completed after 100ms",
+        "description": "should run async task"
+      },
+      {
+        "input": [50],
+        "expected": "Task completed after 50ms",
+        "description": "should handle different delays"
+      }
+    ],
+    "conceptTags": ["asyncio", "async-await", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Type Hints",
+    "description": "Create a function with proper type hints for parameters and return value.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-type-hints",
+    "functionName": "calculate_average",
+    "parameterTypes": ["list"],
+    "returnType": "float",
+    "template": "from typing import List\n\ndef calculate_average(numbers: List[float]) -> float:\n    # Calculate average of numbers with proper type hints\n    # Return 0.0 if list is empty\n    pass",
+    "testCases": [
+      {
+        "input": [[1.0, 2.0, 3.0, 4.0]],
+        "expected": 2.5,
+        "description": "should calculate average"
+      },
+      {
+        "input": [[10.0]],
+        "expected": 10.0,
+        "description": "should handle single number"
+      },
+      {
+        "input": [[]],
+        "expected": 0.0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["type-hints", "typing", "functions"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Data Classes",
+    "description": "Use dataclasses to create a simple data structure.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-dataclasses",
+    "functionName": "create_person",
+    "parameterTypes": ["str", "int", "str"],
+    "returnType": "str",
+    "template": "from dataclasses import dataclass\n\n@dataclass\nclass Person:\n    name: str\n    age: int\n    email: str\n    \n    def introduce(self) -> str:\n        return f\"Hi, I'm {self.name}, {self.age} years old. Email: {self.email}\"\n\ndef create_person(name, age, email):\n    # Create a Person instance and return their introduction\n    pass",
+    "testCases": [
+      {
+        "input": ["Alice", 30, "alice@example.com"],
+        "expected": "Hi, I'm Alice, 30 years old. Email: alice@example.com",
+        "description": "should create person and return introduction"
+      },
+      {
+        "input": ["Bob", 25, "bob@test.org"],
+        "expected": "Hi, I'm Bob, 25 years old. Email: bob@test.org",
+        "description": "should work with different data"
+      }
+    ],
+    "conceptTags": ["dataclasses", "classes", "type-hints"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Itertools",
+    "description": "Use itertools to solve a combination problem.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-itertools",
+    "functionName": "find_combinations",
+    "parameterTypes": ["list", "int"],
+    "returnType": "list",
+    "template": "from itertools import combinations\n\ndef find_combinations(items, r):\n    # Find all combinations of r items from the list\n    # Return list of tuples\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], 2],
+        "expected": [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]],
+        "description": "should find all 2-combinations"
+      },
+      {
+        "input": [["a", "b", "c"], 3],
+        "expected": [["a", "b", "c"]],
+        "description": "should handle full combinations"
+      },
+      {
+        "input": [[1, 2], 1],
+        "expected": [[1], [2]],
+        "description": "should handle single item combinations"
+      }
+    ],
+    "conceptTags": ["itertools", "combinations", "functional-programming"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Algorithm - Binary Search",
+    "description": "Implement binary search algorithm in Python.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-binary-search",
+    "functionName": "binary_search",
+    "parameterTypes": ["list", "int"],
+    "returnType": "int",
+    "template": "def binary_search(arr, target):\n    # Implement binary search algorithm\n    # Return index of target if found, -1 otherwise\n    # Assume arr is sorted in ascending order\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 3, 5, 7, 9, 11], 7],
+        "expected": 3,
+        "description": "should find target in sorted array"
+      },
+      {
+        "input": [[1, 2, 3, 4, 5], 6],
+        "expected": -1,
+        "description": "should return -1 when target not found"
+      },
+      {
+        "input": [[10], 10],
+        "expected": 0,
+        "description": "should handle single element array"
+      }
+    ],
+    "conceptTags": ["algorithms", "binary-search", "searching"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Web Scraping Simulation",
+    "description": "Simulate web scraping by parsing HTML-like strings.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-web-scraping",
+    "functionName": "extract_links",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import re\n\ndef extract_links(html_content):\n    # Extract all href attributes from anchor tags\n    # Return list of URLs\n    # Example: <a href=\"https://example.com\">Link</a>\n    pass",
+    "testCases": [
+      {
+        "input": ["<a href=\"https://example.com\">Example</a> and <a href=\"https://test.org\">Test</a>"],
+        "expected": ["https://example.com", "https://test.org"],
+        "description": "should extract multiple links"
+      },
+      {
+        "input": ["<p>No links here</p>"],
+        "expected": [],
+        "description": "should return empty list when no links"
+      },
+      {
+        "input": ["<a href=\"/local/path\">Local</a>"],
+        "expected": ["/local/path"],
+        "description": "should handle relative links"
+      }
+    ],
+    "conceptTags": ["web-scraping", "regex", "html-parsing"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Data Analysis",
+    "description": "Perform basic data analysis on a list of dictionaries.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-data-analysis",
+    "functionName": "analyze_sales",
+    "parameterTypes": ["list"],
+    "returnType": "dict",
+    "template": "def analyze_sales(sales_data):\n    # Analyze sales data and return summary statistics\n    # sales_data: list of dicts with 'product', 'quantity', 'price'\n    # Return dict with 'total_revenue', 'average_price', 'top_product'\n    pass",
+    "testCases": [
+      {
+        "input": [[{"product": "A", "quantity": 10, "price": 5.0}, {"product": "B", "quantity": 5, "price": 10.0}, {"product": "A", "quantity": 3, "price": 5.0}]],
+        "expected": {"total_revenue": 115.0, "average_price": 6.67, "top_product": "A"},
+        "description": "should analyze sales data"
+      },
+      {
+        "input": [[{"product": "X", "quantity": 2, "price": 25.0}]],
+        "expected": {"total_revenue": 50.0, "average_price": 25.0, "top_product": "X"},
+        "description": "should handle single item"
+      }
+    ],
+    "conceptTags": ["data-analysis", "dictionaries", "aggregation"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
   }
 ]

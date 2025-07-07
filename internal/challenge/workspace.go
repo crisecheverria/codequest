@@ -51,6 +51,8 @@ func getSolutionFileName(ch Challenge) string {
 		return "solution.js"
 	case "go":
 		return "solution.go"
+	case "python":
+		return "solution.py"
 	default:
 		return "solution.txt"
 	}
