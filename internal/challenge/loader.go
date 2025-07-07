@@ -13,9 +13,6 @@ func LoadChallenges() ([]Challenge, error) {
 		"data/challenges.json",                  // From binary location (standalone)
 		"../data/challenges.json",              // From challenge directory
 		"../../data/challenges.json",           // From nested challenge directory
-		"../backend/data/challenges.json",       // From packages/cli (monorepo)
-		"../../backend/data/challenges.json",    // From challenge directory (monorepo)
-		"../../../backend/data/challenges.json", // From nested directory (monorepo)
 	}
 
 	var dataPath string

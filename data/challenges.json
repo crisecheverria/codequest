@@ -2001,5 +2001,570 @@
     "conceptTags": ["pointers-methods-go"],
     "timeLimit": 5000,
     "memoryLimit": 128
+  },
+  {
+    "title": "Go String Palindrome",
+    "description": "Create a function that checks if a string is a palindrome (reads the same forwards and backwards).",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-string-palindrome",
+    "functionName": "isPalindrome",
+    "parameterTypes": ["string"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc isPalindrome(s string) bool {\n    // Check if string is a palindrome\n    // Ignore case and spaces\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["racecar"],
+        "expected": true,
+        "description": "should return true for palindrome"
+      },
+      {
+        "input": ["hello"],
+        "expected": false,
+        "description": "should return false for non-palindrome"
+      },
+      {
+        "input": ["A man a plan a canal Panama"],
+        "expected": true,
+        "description": "should ignore spaces and case"
+      }
+    ],
+    "conceptTags": ["strings-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Factorial Recursion",
+    "description": "Calculate the factorial of a number using recursion.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-factorial-recursion",
+    "functionName": "factorial",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc factorial(n int) int {\n    // Calculate factorial using recursion\n    // 5! = 5 * 4 * 3 * 2 * 1 = 120\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [5],
+        "expected": 120,
+        "description": "should calculate 5!"
+      },
+      {
+        "input": [0],
+        "expected": 1,
+        "description": "should handle 0!"
+      },
+      {
+        "input": [1],
+        "expected": 1,
+        "description": "should handle 1!"
+      }
+    ],
+    "conceptTags": ["recursion-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Reverse Slice",
+    "description": "Create a function that reverses a slice of integers in-place.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-reverse-slice",
+    "functionName": "reverseSlice",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc reverseSlice(nums []int) []int {\n    // Reverse the slice in-place\n    // [1,2,3,4] becomes [4,3,2,1]\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": [4, 3, 2, 1],
+        "description": "should reverse slice"
+      },
+      {
+        "input": [[1]],
+        "expected": [1],
+        "description": "should handle single element"
+      },
+      {
+        "input": [[]],
+        "expected": [],
+        "description": "should handle empty slice"
+      }
+    ],
+    "conceptTags": ["slices-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go String Contains",
+    "description": "Implement a function that checks if a string contains a substring without using the strings package.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-string-contains",
+    "functionName": "contains",
+    "parameterTypes": ["string", "string"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc contains(str, substr string) bool {\n    // Check if str contains substr\n    // Don't use strings.Contains()\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["hello world", "world"],
+        "expected": true,
+        "description": "should find substring"
+      },
+      {
+        "input": ["hello", "xyz"],
+        "expected": false,
+        "description": "should return false when not found"
+      },
+      {
+        "input": ["", "test"],
+        "expected": false,
+        "description": "should handle empty string"
+      }
+    ],
+    "conceptTags": ["strings-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Prime Number",
+    "description": "Create a function that checks if a number is prime.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-prime-number",
+    "functionName": "isPrime",
+    "parameterTypes": ["int"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc isPrime(n int) bool {\n    // Check if n is a prime number\n    // Prime: only divisible by 1 and itself\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [7],
+        "expected": true,
+        "description": "should return true for prime"
+      },
+      {
+        "input": [4],
+        "expected": false,
+        "description": "should return false for composite"
+      },
+      {
+        "input": [1],
+        "expected": false,
+        "description": "should return false for 1"
+      }
+    ],
+    "conceptTags": ["math", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Fibonacci Iterative",
+    "description": "Calculate the nth Fibonacci number using iteration (not recursion).",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-fibonacci-iterative",
+    "functionName": "fibonacci",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc fibonacci(n int) int {\n    // Calculate nth Fibonacci using iteration\n    // 0, 1, 1, 2, 3, 5, 8, 13...\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [1],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [6],
+        "expected": 8,
+        "description": "should calculate fib(6)"
+      }
+    ],
+    "conceptTags": ["loops-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Sum Digits",
+    "description": "Create a function that sums all digits in a positive integer.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-sum-digits",
+    "functionName": "sumDigits",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc sumDigits(n int) int {\n    // Sum all digits in the number\n    // 123 -> 1 + 2 + 3 = 6\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [123],
+        "expected": 6,
+        "description": "should sum digits of 123"
+      },
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should handle zero"
+      },
+      {
+        "input": [999],
+        "expected": 27,
+        "description": "should sum digits of 999"
+      }
+    ],
+    "conceptTags": ["math", "loops-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Find Missing Number",
+    "description": "Find the missing number in a sequence from 1 to n where one number is missing.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-find-missing-number",
+    "functionName": "findMissing",
+    "parameterTypes": ["[]int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc findMissing(nums []int) int {\n    // Find missing number in sequence 1 to n\n    // [1,2,4,5] missing 3\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 4, 5]],
+        "expected": 3,
+        "description": "should find missing 3"
+      },
+      {
+        "input": [[2, 3, 4, 5]],
+        "expected": 1,
+        "description": "should find missing 1"
+      },
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": 5,
+        "description": "should find missing last number"
+      }
+    ],
+    "conceptTags": ["arrays-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Interface Shape Area",
+    "description": "Create a Shape interface with an Area method, and implement it for Rectangle and Circle.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-interface-shape-area",
+    "functionName": "calculateArea",
+    "parameterTypes": ["string", "float64", "float64"],
+    "returnType": "float64",
+    "template": "package main\n\nimport \"math\"\n\ntype Shape interface {\n    Area() float64\n}\n\ntype Rectangle struct {\n    width, height float64\n}\n\ntype Circle struct {\n    radius float64\n}\n\n// Implement Area methods\n\nfunc calculateArea(shapeType string, param1, param2 float64) float64 {\n    // Create shape and return its area\n    // \"rectangle\": param1=width, param2=height\n    // \"circle\": param1=radius, param2=ignored\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["rectangle", 5.0, 3.0],
+        "expected": 15.0,
+        "description": "should calculate rectangle area"
+      },
+      {
+        "input": ["circle", 2.0, 0.0],
+        "expected": 12.566370614359172,
+        "description": "should calculate circle area"
+      }
+    ],
+    "conceptTags": ["interfaces-go", "structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Custom Error Handling",
+    "description": "Create a custom error type and a function that validates age with custom error messages.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-custom-error-handling",
+    "functionName": "validateAge",
+    "parameterTypes": ["int"],
+    "returnType": "error",
+    "template": "package main\n\nimport \"fmt\"\n\ntype AgeError struct {\n    Age int\n    Msg string\n}\n\nfunc (e *AgeError) Error() string {\n    return fmt.Sprintf(\"Age %d: %s\", e.Age, e.Msg)\n}\n\nfunc validateAge(age int) error {\n    // Return custom error if age < 0 or age > 150\n    // Return nil if valid\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [25],
+        "expected": null,
+        "description": "should return nil for valid age"
+      },
+      {
+        "input": [-5],
+        "expected": "Age -5: invalid age",
+        "description": "should return error for negative age"
+      },
+      {
+        "input": [200],
+        "expected": "Age 200: invalid age",
+        "description": "should return error for age > 150"
+      }
+    ],
+    "conceptTags": ["errors-go", "interfaces-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go JSON Marshal Unmarshal",
+    "description": "Create a function that converts a Person struct to JSON and back.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-json-marshal-unmarshal",
+    "functionName": "jsonRoundTrip",
+    "parameterTypes": ["string", "int"],
+    "returnType": "string",
+    "template": "package main\n\nimport \"encoding/json\"\n\ntype Person struct {\n    Name string `json:\"name\"`\n    Age  int    `json:\"age\"`\n}\n\nfunc jsonRoundTrip(name string, age int) string {\n    // Create Person, marshal to JSON, then return JSON string\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Alice", 30],
+        "expected": "{\"name\":\"Alice\",\"age\":30}",
+        "description": "should marshal Person to JSON"
+      },
+      {
+        "input": ["Bob", 25],
+        "expected": "{\"name\":\"Bob\",\"age\":25}",
+        "description": "should marshal another Person to JSON"
+      }
+    ],
+    "conceptTags": ["json-go", "structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Goroutine Counter",
+    "description": "Use goroutines to count numbers concurrently and return the sum.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-goroutine-counter",
+    "functionName": "concurrentSum",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nimport \"sync\"\n\nfunc concurrentSum(n int) int {\n    // Use goroutines to sum numbers 1 to n\n    // Split work between multiple goroutines\n    var wg sync.WaitGroup\n    var mu sync.Mutex\n    sum := 0\n    \n    // Implement concurrent sum\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [10],
+        "expected": 55,
+        "description": "should sum 1 to 10 concurrently"
+      },
+      {
+        "input": [5],
+        "expected": 15,
+        "description": "should sum 1 to 5 concurrently"
+      }
+    ],
+    "conceptTags": ["goroutines-go", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Channel Producer Consumer",
+    "description": "Implement a producer-consumer pattern using channels.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-channel-producer-consumer",
+    "functionName": "processNumbers",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc processNumbers(nums []int) []int {\n    // Use channels for producer-consumer pattern\n    // Producer sends numbers, consumer doubles them\n    input := make(chan int)\n    output := make(chan int)\n    \n    // Implement producer-consumer\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": [2, 4, 6, 8],
+        "description": "should double all numbers using channels"
+      },
+      {
+        "input": [[5, 10]],
+        "expected": [10, 20],
+        "description": "should double numbers using channels"
+      }
+    ],
+    "conceptTags": ["channels-go", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Binary Search Tree",
+    "description": "Implement a binary search tree with insert and search operations.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-binary-search-tree",
+    "functionName": "createBST",
+    "parameterTypes": ["[]int"],
+    "returnType": "bool",
+    "template": "package main\n\ntype TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\ntype BST struct {\n    Root *TreeNode\n}\n\nfunc (bst *BST) Insert(val int) {\n    // Insert value into BST\n}\n\nfunc (bst *BST) Search(val int) bool {\n    // Search for value in BST\n}\n\nfunc createBST(values []int) bool {\n    // Create BST, insert all values, then search for first value\n    bst := &BST{}\n    for _, v := range values {\n        bst.Insert(v)\n    }\n    if len(values) > 0 {\n        return bst.Search(values[0])\n    }\n    return false\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[5, 3, 7, 1, 9]],
+        "expected": true,
+        "description": "should find first inserted value"
+      },
+      {
+        "input": [[10, 5, 15]],
+        "expected": true,
+        "description": "should find root value"
+      }
+    ],
+    "conceptTags": ["data-structures", "trees"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Bubble Sort",
+    "description": "Implement the bubble sort algorithm to sort a slice of integers.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-bubble-sort",
+    "functionName": "bubbleSort",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc bubbleSort(nums []int) []int {\n    // Implement bubble sort algorithm\n    // Sort in ascending order\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[64, 34, 25, 12, 22, 11, 90]],
+        "expected": [11, 12, 22, 25, 34, 64, 90],
+        "description": "should sort array using bubble sort"
+      },
+      {
+        "input": [[3, 1, 4, 1, 5]],
+        "expected": [1, 1, 3, 4, 5],
+        "description": "should handle duplicates"
+      }
+    ],
+    "conceptTags": ["sorting", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Linked List",
+    "description": "Implement a basic linked list with append and find operations.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-linked-list",
+    "functionName": "createLinkedList",
+    "parameterTypes": ["[]int"],
+    "returnType": "bool",
+    "template": "package main\n\ntype ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\ntype LinkedList struct {\n    Head *ListNode\n}\n\nfunc (ll *LinkedList) Append(val int) {\n    // Append value to end of list\n}\n\nfunc (ll *LinkedList) Find(val int) bool {\n    // Find value in list\n}\n\nfunc createLinkedList(values []int) bool {\n    // Create list, append all values, find first value\n    ll := &LinkedList{}\n    for _, v := range values {\n        ll.Append(v)\n    }\n    if len(values) > 0 {\n        return ll.Find(values[0])\n    }\n    return false\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": true,
+        "description": "should find first value in list"
+      },
+      {
+        "input": [[10, 20, 30]],
+        "expected": true,
+        "description": "should find value in list"
+      }
+    ],
+    "conceptTags": ["data-structures", "linked-lists"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Worker Pool",
+    "description": "Implement a worker pool pattern with goroutines and channels to process jobs concurrently.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-worker-pool",
+    "functionName": "processJobs",
+    "parameterTypes": ["[]int", "int"],
+    "returnType": "[]int",
+    "template": "package main\n\nimport \"sync\"\n\nfunc processJobs(jobs []int, numWorkers int) []int {\n    // Implement worker pool to square each number\n    // Use numWorkers goroutines\n    jobChan := make(chan int, len(jobs))\n    resultChan := make(chan int, len(jobs))\n    var wg sync.WaitGroup\n    \n    // Implement worker pool pattern\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], 2],
+        "expected": [1, 4, 9, 16],
+        "description": "should square numbers using worker pool"
+      },
+      {
+        "input": [[5, 6], 1],
+        "expected": [25, 36],
+        "description": "should work with single worker"
+      }
+    ],
+    "conceptTags": ["concurrency", "worker-pool", "channels-go"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Context Timeout",
+    "description": "Use context to implement operation timeouts for a long-running function.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-context-timeout",
+    "functionName": "operationWithTimeout",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nimport (\n    \"context\"\n    \"time\"\n)\n\nfunc operationWithTimeout(seconds int) string {\n    // Create context with timeout\n    // If operation takes longer than 2 seconds, return \"timeout\"\n    // Otherwise return \"completed\"\n    ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)\n    defer cancel()\n    \n    // Simulate work that takes 'seconds' seconds\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [1],
+        "expected": "completed",
+        "description": "should complete within timeout"
+      },
+      {
+        "input": [3],
+        "expected": "timeout",
+        "description": "should timeout for long operation"
+      }
+    ],
+    "conceptTags": ["context-go", "timeout"],
+    "timeLimit": 15000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go HTTP JSON API",
+    "description": "Create a simple HTTP server that responds with JSON data.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-http-json-api",
+    "functionName": "createServer",
+    "parameterTypes": ["string"],
+    "returnType": "string",
+    "template": "package main\n\nimport (\n    \"encoding/json\"\n    \"fmt\"\n    \"net/http\"\n)\n\ntype Response struct {\n    Message string `json:\"message\"`\n    Status  string `json:\"status\"`\n}\n\nfunc createServer(message string) string {\n    // Create HTTP handler that returns JSON response\n    // Return the JSON string that would be sent\n    response := Response{\n        Message: message,\n        Status:  \"success\",\n    }\n    \n    // Marshal to JSON and return\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Hello World"],
+        "expected": "{\"message\":\"Hello World\",\"status\":\"success\"}",
+        "description": "should create JSON response"
+      },
+      {
+        "input": ["API Test"],
+        "expected": "{\"message\":\"API Test\",\"status\":\"success\"}",
+        "description": "should create JSON response with different message"
+      }
+    ],
+    "conceptTags": ["http-go", "json-go", "web"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Concurrent Web Scraper",
+    "description": "Fetch multiple URLs concurrently and return their status codes.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-concurrent-web-scraper",
+    "functionName": "fetchURLs",
+    "parameterTypes": ["[]string"],
+    "returnType": "[]int",
+    "template": "package main\n\nimport (\n    \"net/http\"\n    \"sync\"\n)\n\nfunc fetchURLs(urls []string) []int {\n    // Fetch all URLs concurrently\n    // Return slice of status codes in same order\n    // Use goroutines and channels\n    \n    // For testing, simulate responses:\n    // \"http://example.com\" -> 200\n    // \"http://invalid.xyz\" -> 404\n    // any other -> 500\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [["http://example.com", "http://invalid.xyz"]],
+        "expected": [200, 404],
+        "description": "should return status codes for URLs"
+      },
+      {
+        "input": [["http://example.com"]],
+        "expected": [200],
+        "description": "should handle single URL"
+      }
+    ],
+    "conceptTags": ["http-go", "concurrency", "web-scraping"],
+    "timeLimit": 15000,
+    "memoryLimit": 128
   }
 ]

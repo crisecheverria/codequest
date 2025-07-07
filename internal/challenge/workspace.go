@@ -49,8 +49,6 @@ func getSolutionFileName(ch Challenge) string {
 		return "solution.ts"
 	case "javascript":
 		return "solution.js"
-	case "php":
-		return "solution.php"
 	case "go":
 		return "solution.go"
 	default:
