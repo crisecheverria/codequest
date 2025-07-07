@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Lua Basics",
+    "slug": "lua-basics",
+    "description": "Learn the fundamental concepts of Lua, including syntax, variables, and simple operations.",
+    "category": "fundamentals",
+    "language": "lua",
+    "order": 1,
+    "dependencies": [],
+    "resources": [
+      {
+        "title": "Lua.org - Getting Started",
+        "url": "https://www.lua.org/pil/1.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua Reference Manual",
+        "url": "https://www.lua.org/manual/5.4/",
+        "type": "documentation"
+      },
+      {
+        "title": "Learn Lua in 15 Minutes",
+        "url": "https://tylerneylon.com/a/learn-lua/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "Lua Data Types",
+    "slug": "lua-data-types",
+    "description": "Explore Lua's data types including numbers, strings, booleans, nil, tables, and functions.",
+    "category": "fundamentals",
+    "language": "lua",
+    "order": 2,
+    "dependencies": ["lua-basics"],
+    "resources": [
+      {
+        "title": "Lua Types and Values",
+        "url": "https://www.lua.org/pil/2.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua String Manipulation",
+        "url": "https://www.lua.org/pil/20.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua Type System Overview",
+        "url": "https://www.tutorialspoint.com/lua/lua_data_types.htm",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "Lua Control Structures",
+    "slug": "lua-control-structures",
+    "description": "Learn how to control program flow with if/else statements and various loops in Lua.",
+    "category": "fundamentals",
+    "language": "lua",
+    "order": 3,
+    "dependencies": ["lua-data-types"],
+    "resources": [
+      {
+        "title": "Lua Control Structures",
+        "url": "https://www.lua.org/pil/4.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua If-Then-Else",
+        "url": "https://www.tutorialspoint.com/lua/lua_decision_making.htm",
+        "type": "article"
+      },
+      {
+        "title": "Lua Loops",
+        "url": "https://www.tutorialspoint.com/lua/lua_loops.htm",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "Lua Functions",
+    "slug": "lua-functions",
+    "description": "Learn how to define and use functions in Lua, explore parameters, return values, and scope.",
+    "category": "fundamentals",
+    "language": "lua",
+    "order": 4,
+    "dependencies": ["lua-control-structures"],
+    "resources": [
+      {
+        "title": "Lua Functions",
+        "url": "https://www.lua.org/pil/5.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua Closures and Environments",
+        "url": "https://www.lua.org/pil/6.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Functions as First-Class Values",
+        "url": "https://www.lua.org/pil/6.1.html",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua Tables",
+    "slug": "lua-tables",
+    "description": "Master Lua tables, the primary data structure that serves as arrays, dictionaries, objects, and more.",
+    "category": "intermediate",
+    "language": "lua",
+    "order": 5,
+    "dependencies": ["lua-functions"],
+    "resources": [
+      {
+        "title": "Lua Tables Tutorial",
+        "url": "https://www.lua.org/pil/11.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Tables as Arrays",
+        "url": "https://www.lua.org/pil/11.1.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Table Traversal",
+        "url": "https://www.lua.org/pil/7.3.html",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua Metatables",
+    "slug": "lua-metatables",
+    "description": "Understand metatables and metamethods to customize object behavior in Lua.",
+    "category": "intermediate",
+    "language": "lua",
+    "order": 6,
+    "dependencies": ["lua-tables"],
+    "resources": [
+      {
+        "title": "Lua Metatables and Metamethods",
+        "url": "https://www.lua.org/pil/13.html",
+        "type": "documentation"
+      },
+      {
+        "title": "The __index Metamethod",
+        "url": "https://www.lua.org/pil/13.4.1.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Object-Oriented Programming with Metatables",
+        "url": "https://www.lua.org/pil/16.html",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua Modules and Packages",
+    "slug": "lua-modules",
+    "description": "Learn to organize code using Lua modules and packages for better code reusability.",
+    "category": "intermediate",
+    "language": "lua",
+    "order": 7,
+    "dependencies": ["lua-functions", "lua-tables"],
+    "resources": [
+      {
+        "title": "Lua Modules",
+        "url": "https://www.lua.org/pil/15.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Lua Package System",
+        "url": "https://www.lua.org/manual/5.4/manual.html#6.3",
+        "type": "documentation"
+      },
+      {
+        "title": "Creating Lua Modules",
+        "url": "https://www.tutorialspoint.com/lua/lua_modules.htm",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "Lua Error Handling",
+    "slug": "lua-error-handling",
+    "description": "Explore error handling techniques in Lua using pcall and xpcall for more robust applications.",
+    "category": "intermediate",
+    "language": "lua",
+    "order": 8,
+    "dependencies": ["lua-functions"],
+    "resources": [
+      {
+        "title": "Lua Error Handling",
+        "url": "https://www.lua.org/pil/8.4.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Error Handling with pcall",
+        "url": "https://www.lua.org/manual/5.4/manual.html#pdf-pcall",
+        "type": "documentation"
+      },
+      {
+        "title": "Advanced Error Handling with xpcall",
+        "url": "https://www.lua.org/manual/5.4/manual.html#pdf-xpcall",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua Coroutines",
+    "slug": "lua-coroutines",
+    "description": "Learn about Lua's coroutines for cooperative multitasking and asynchronous programming.",
+    "category": "advanced",
+    "language": "lua",
+    "order": 9,
+    "dependencies": ["lua-functions", "lua-error-handling"],
+    "resources": [
+      {
+        "title": "Lua Coroutines Tutorial",
+        "url": "https://www.lua.org/pil/9.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Coroutines in Lua",
+        "url": "https://www.lua.org/manual/5.4/manual.html#6.2",
+        "type": "documentation"
+      },
+      {
+        "title": "Advanced Coroutine Patterns",
+        "url": "https://www.lua.org/pil/9.3.html",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua for Game Development",
+    "slug": "lua-game-dev",
+    "description": "Apply Lua skills to game development scenarios including states, components and event systems.",
+    "category": "advanced",
+    "language": "lua",
+    "order": 10,
+    "dependencies": ["lua-tables", "lua-metatables", "lua-modules"],
+    "resources": [
+      {
+        "title": "Lua in LÖVE Game Framework",
+        "url": "https://love2d.org/wiki/Getting_Started",
+        "type": "documentation"
+      },
+      {
+        "title": "Game Programming with Lua",
+        "url": "https://gamedevacademy.org/lua-programming-tutorial/",
+        "type": "article"
+      },
+      {
+        "title": "Object Oriented Programming in Lua for Games",
+        "url": "https://www.gamedesigning.org/learn/lua/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "Lua and C Integration",
+    "slug": "lua-c-integration",
+    "description": "Learn how Lua interfaces with C/C++ code for creating efficient applications and extensions.",
+    "category": "advanced",
+    "language": "lua",
+    "order": 11,
+    "dependencies": ["lua-metatables", "lua-error-handling"],
+    "resources": [
+      {
+        "title": "Lua C API Reference",
+        "url": "https://www.lua.org/manual/5.4/manual.html#4",
+        "type": "documentation"
+      },
+      {
+        "title": "Extending Lua with C",
+        "url": "https://www.lua.org/pil/26.html",
+        "type": "documentation"
+      },
+      {
+        "title": "Calling Lua from C",
+        "url": "https://www.lua.org/pil/25.html",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "Lua Performance Optimization",
+    "slug": "lua-optimization",
+    "description": "Techniques to optimize Lua code for better performance in real-world applications.",
+    "category": "advanced",
+    "language": "lua",
+    "order": 12,
+    "dependencies": ["lua-tables", "lua-functions", "lua-metatables"],
+    "resources": [
+      {
+        "title": "Lua Performance Tips",
+        "url": "http://www.lua.org/gems/sample.pdf",
+        "type": "article"
+      },
+      {
+        "title": "LuaJIT Performance Guide",
+        "url": "https://wiki.luajit.org/Numerical-Computing-Performance-Guide",
+        "type": "documentation"
+      },
+      {
+        "title": "Optimizing Table Usage",
+        "url": "https://www.lua.org/gems/sample2.pdf",
+        "type": "article"
+      }
+    ]
+  }
+]

@@ -11,6 +11,7 @@ codequest-*
 # Test and development scripts
 *.sh
 !install.sh
+!test-data-loading.sh
 
 # Coverage files
 *.out

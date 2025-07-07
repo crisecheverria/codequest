@@ -1,0 +1,732 @@
+[
+  {
+    "title": "Hello World in PHP",
+    "description": "Create a function that returns the string 'Hello, World!'",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "helloWorld",
+    "parameterTypes": [],
+    "returnType": "string",
+    "template": "<?php\n\nfunction helloWorld() {\n  // Write your code here\n  return '';\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "Hello, World!",
+        "description": "should return 'Hello, World!'"
+      }
+    ],
+    "conceptTags": [
+      "php-basics"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "hello-world-in-php-php"
+  },
+  {
+    "title": "Add Two Numbers in PHP",
+    "description": "Create a function that takes two numbers and returns their sum.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "sum",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "<?php\n\nfunction sum($a, $b) {\n  // Write your code here\n  return 0;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          1,
+          2
+        ],
+        "expected": 3,
+        "description": "should add positive numbers"
+      },
+      {
+        "input": [
+          -1,
+          1
+        ],
+        "expected": 0,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 0,
+        "description": "should handle zeros"
+      }
+    ],
+    "conceptTags": [
+      "php-basics",
+      "php-functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "add-two-numbers-in-php-php"
+  },
+  {
+    "title": "Reverse a String in PHP",
+    "description": "Create a function that reverses a string.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "reverseString",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "string",
+    "template": "<?php\n\nfunction reverseString($str) {\n  // Write your code here\n  return '';\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "olleh",
+        "description": "should reverse normal strings"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": "",
+        "description": "should handle empty strings"
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "a",
+        "description": "should handle single character strings"
+      }
+    ],
+    "conceptTags": [
+      "php-strings",
+      "php-functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "reverse-a-string-in-php-php"
+  },
+  {
+    "title": "PHP Array Manipulation",
+    "description": "Create a function that takes an array of numbers and returns a new array with each number doubled.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "doubleValues",
+    "parameterTypes": [
+      "array"
+    ],
+    "returnType": "array",
+    "template": "<?php\n\nfunction doubleValues($arr) {\n  // Write your code here\n  return [];\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should double all values in the array"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should return empty array when input is empty"
+      },
+      {
+        "input": [
+          [
+            -2,
+            0,
+            5
+          ]
+        ],
+        "expected": [
+          -4,
+          0,
+          10
+        ],
+        "description": "should handle negative numbers and zero"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-array-manipulation-php"
+  },
+  {
+    "title": "PHP Associative Arrays",
+    "description": "Create a function that counts occurrences of each element in an array and returns an associative array with the counts.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "countOccurrences",
+    "parameterTypes": [
+      "array"
+    ],
+    "returnType": "array",
+    "template": "<?php\n\nfunction countOccurrences($arr) {\n  // Write your code here\n  return [];\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        ],
+        "expected": {
+          "1": 1,
+          "2": 2,
+          "3": 3
+        },
+        "description": "should count occurrences of numbers"
+      },
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ],
+        "expected": {
+          "a": 3,
+          "b": 2,
+          "c": 1
+        },
+        "description": "should count occurrences of strings"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {},
+        "description": "should return empty object for empty array"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-associative-arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-associative-arrays-php"
+  },
+  {
+    "title": "PHP String Manipulation",
+    "description": "Create a function that counts the number of vowels in a string.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "countVowels",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "number",
+    "template": "<?php\n\nfunction countVowels($str) {\n  // Write your code here\n  return 0;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 2,
+        "description": "should count vowels correctly"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 5,
+        "description": "should count all vowels"
+      },
+      {
+        "input": [
+          "php"
+        ],
+        "expected": 0,
+        "description": "should handle strings with no vowels"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": 0,
+        "description": "should handle empty strings"
+      }
+    ],
+    "conceptTags": [
+      "php-strings",
+      "php-loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-string-manipulation-php"
+  },
+  {
+    "title": "PHP Function Parameters",
+    "description": "Create a function that calculates the total price after applying a discount percentage.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "calculateDiscount",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "<?php\n\nfunction calculateDiscount($price, $discountPercent) {\n  // Write your code here\n  return 0;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          100,
+          10
+        ],
+        "expected": 90,
+        "description": "should apply 10% discount correctly"
+      },
+      {
+        "input": [
+          50,
+          20
+        ],
+        "expected": 40,
+        "description": "should apply 20% discount correctly"
+      },
+      {
+        "input": [
+          200,
+          0
+        ],
+        "expected": 200,
+        "description": "should handle zero discount"
+      },
+      {
+        "input": [
+          100,
+          100
+        ],
+        "expected": 0,
+        "description": "should handle 100% discount"
+      }
+    ],
+    "conceptTags": [
+      "php-functions",
+      "php-math"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-function-parameters-php"
+  },
+  {
+    "title": "PHP Object-Oriented Basics",
+    "description": "Create a class 'Rectangle' with width and height properties, and methods to calculate area and perimeter.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "createRectangleClass",
+    "parameterTypes": [],
+    "returnType": "string",
+    "template": "<?php\n\nfunction createRectangleClass() {\n  // Write your Rectangle class here\n  $classCode = <<<'EOD'\nclass Rectangle {\n  // Add your properties here\n  private $width;\n  private $height;\n  \n  // Constructor\n  public function __construct($width, $height) {\n    // Initialize properties\n  }\n  \n  // Method to calculate area\n  public function getArea() {\n    // Return area\n  }\n  \n  // Method to calculate perimeter\n  public function getPerimeter() {\n    // Return perimeter\n  }\n}\nEOD;\n  \n  // Return the class definition as a string for testing\n  return $classCode;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "class Rectangle{public function __construct($width,$height){$this->width=$width;$this->height=$height;}public function getArea(){return $this->width*$this->height;}public function getPerimeter(){return 2*($this->width+$this->height);}}",
+        "description": "should define a Rectangle class with area and perimeter methods"
+      }
+    ],
+    "conceptTags": [
+      "php-oop",
+      "php-classes"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-object-oriented-basics-php"
+  },
+  {
+    "title": "PHP Array Functions",
+    "description": "Create a function that filters an array to return only even numbers.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "filterEvenNumbers",
+    "parameterTypes": [
+      "array"
+    ],
+    "returnType": "array",
+    "template": "<?php\n\nfunction filterEvenNumbers($numbers) {\n  // Write your code here\n  return [];\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should filter out odd numbers"
+      },
+      {
+        "input": [
+          [
+            11,
+            13,
+            15
+          ]
+        ],
+        "expected": [],
+        "description": "should return empty array if no even numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-array-functions-php"
+  },
+  {
+    "title": "PHP Error Handling",
+    "description": "Create a function that safely divides two numbers, handling division by zero with a custom error message.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "safeDivide",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "array",
+    "template": "<?php\n\nfunction safeDivide($a, $b) {\n  // Write your code here\n  // Return an array with [result, error_message]\n  // If successful, error_message should be null\n  // If error, result should be null\n  return [null, null];\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          10,
+          2
+        ],
+        "expected": [
+          5,
+          null
+        ],
+        "description": "should divide numbers correctly"
+      },
+      {
+        "input": [
+          10,
+          0
+        ],
+        "expected": [
+          null,
+          "Division by zero"
+        ],
+        "description": "should handle division by zero"
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "expected": [
+          0,
+          null
+        ],
+        "description": "should handle zero dividend"
+      }
+    ],
+    "conceptTags": [
+      "php-error-handling",
+      "php-functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "php-error-handling-php"
+  },
+  {
+    "title": "Linear Search",
+    "description": "Implement linear search to find the index of a target value in an array.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "linearSearch",
+    "parameterTypes": [
+      "array",
+      "int"
+    ],
+    "returnType": "int",
+    "template": "<?php\n\nfunction linearSearch(array $arr, int $target): int {\n  // Write your code here\n  return -1;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": 2,
+        "description": "target in middle"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          4
+        ],
+        "expected": -1,
+        "description": "target not found"
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": -1,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "php-list-algorithms",
+      "php-arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "linear-search-php"
+  },
+  {
+    "title": "Binary Search",
+    "description": "Implement binary search on a sorted array. Return the index or -1.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "binarySearch",
+    "parameterTypes": [
+      "array",
+      "int"
+    ],
+    "returnType": "int",
+    "template": "<?php\n\nfunction binarySearch(array $arr, int $target): int {\n  // Write your code here\n  return -1;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          5
+        ],
+        "expected": 2,
+        "description": "target found"
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6,
+            8
+          ],
+          3
+        ],
+        "expected": -1,
+        "description": "target not found"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-list-algorithms",
+      "php-recursion"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "binary-search-php"
+  },
+  {
+    "title": "Find First Duplicate",
+    "description": "Return the first duplicate number found in the array or -1 if none exist.",
+    "difficulty": "medium",
+    "language": "php",
+    "functionName": "firstDuplicate",
+    "parameterTypes": [
+      "array"
+    ],
+    "returnType": "int",
+    "template": "<?php\n\nfunction firstDuplicate(array $arr): int {\n  // Write your code here\n  return -1;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            2,
+            1,
+            3,
+            5,
+            3,
+            2
+          ]
+        ],
+        "expected": 3,
+        "description": "3 is first duplicate"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": -1,
+        "description": "no duplicates"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-list-algorithms",
+      "php-duplicates"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-first-duplicate-php"
+  },
+  {
+    "title": "Count Occurrences",
+    "description": "Count how many times a target number appears in the array.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "countOccurrences",
+    "parameterTypes": [
+      "array",
+      "int"
+    ],
+    "returnType": "int",
+    "template": "<?php\n\nfunction countOccurrences(array $arr, int $target): int {\n  // Write your code here\n  return 0;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            2
+          ],
+          2
+        ],
+        "expected": 3,
+        "description": "multiple occurrences"
+      },
+      {
+        "input": [
+          [
+            4,
+            5,
+            6
+          ],
+          1
+        ],
+        "expected": 0,
+        "description": "none found"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-list-algorithms",
+      "php-counting"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "count-occurrences-php"
+  },
+  {
+    "title": "Check if Sorted",
+    "description": "Determine if an array is sorted in ascending order.",
+    "difficulty": "easy",
+    "language": "php",
+    "functionName": "isSorted",
+    "parameterTypes": [
+      "array"
+    ],
+    "returnType": "bool",
+    "template": "<?php\n\nfunction isSorted(array $arr): bool {\n  // Write your code here\n  return true;\n}\n\n?>",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": true,
+        "description": "sorted array"
+      },
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": false,
+        "description": "descending"
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": true,
+        "description": "single element"
+      }
+    ],
+    "conceptTags": [
+      "php-arrays",
+      "php-list-algorithms",
+      "php-loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "check-if-sorted-php"
+  }
+]

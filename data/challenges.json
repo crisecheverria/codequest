@@ -1,0 +1,2005 @@
+[
+  {
+    "title": "Add Two Numbers",
+    "description": "Create a function that takes two numbers and returns their sum.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "slug": "add-two-numbers-typescript",
+    "functionName": "sum",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function sum(a: number, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          1,
+          2
+        ],
+        "expected": 3,
+        "description": "should add positive numbers"
+      },
+      {
+        "input": [
+          -1,
+          1
+        ],
+        "expected": 0,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 0,
+        "description": "should handle zeros"
+      }
+    ],
+    "conceptTags": [
+      "operators",
+      "variables"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Multiply Two Numbers",
+    "description": "Create a function that takes two numbers and returns their product.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "slug": "multiply-two-numbers-typescript",
+    "functionName": "multiply",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function multiply(a: number, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          2,
+          3
+        ],
+        "expected": 6,
+        "description": "should multiply positive numbers"
+      },
+      {
+        "input": [
+          -2,
+          3
+        ],
+        "expected": -6,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "expected": 0,
+        "description": "should handle zeros"
+      }
+    ],
+    "conceptTags": [
+      "variables",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Check if Number is Even",
+    "description": "Create a function that returns true if a number is even, and false if it's odd.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "isEven",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "boolean",
+    "template": "function isEven(num: number): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          2
+        ],
+        "expected": true,
+        "description": "should return true for even numbers"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": false,
+        "description": "should return false for odd numbers"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": true,
+        "description": "should handle zero"
+      },
+      {
+        "input": [
+          -4
+        ],
+        "expected": true,
+        "description": "should handle negative even numbers"
+      }
+    ],
+    "conceptTags": [
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "check-if-number-is-even-typescript"
+  },
+  {
+    "title": "Get Absolute Value",
+    "description": "Create a function that returns the absolute value of a number.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "getAbsoluteValue",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function getAbsoluteValue(num: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should return positive numbers unchanged"
+      },
+      {
+        "input": [
+          -5
+        ],
+        "expected": 5,
+        "description": "should convert negative numbers to positive"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": [
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "get-absolute-value-typescript"
+  },
+  {
+    "title": "Reverse a String",
+    "description": "Create a function that reverses a string.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "reverseString",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "string",
+    "template": "function reverseString(str: string): string {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "olleh",
+        "description": "should reverse normal strings"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": "",
+        "description": "should handle empty strings"
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "a",
+        "description": "should handle single character strings"
+      }
+    ],
+    "conceptTags": [
+      "strings",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "reverse-a-string-typescript"
+  },
+  {
+    "title": "Count Vowels",
+    "description": "Create a function that counts the number of vowels in a string.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "countVowels",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "number",
+    "template": "function countVowels(str: string): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 2,
+        "description": "should count vowels correctly"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 5,
+        "description": "should count all vowels"
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": 0,
+        "description": "should handle strings with no vowels"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": 0,
+        "description": "should handle empty strings"
+      }
+    ],
+    "conceptTags": [
+      "loops",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "count-vowels-typescript"
+  },
+  {
+    "title": "Find Maximum Value",
+    "description": "Create a function that finds the maximum value in an array of numbers.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "findMax",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function findMax(arr: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            2,
+            4
+          ]
+        ],
+        "expected": 5,
+        "description": "should find max in positive numbers"
+      },
+      {
+        "input": [
+          [
+            -1,
+            -3,
+            -5,
+            -2,
+            -4
+          ]
+        ],
+        "expected": -1,
+        "description": "should find max in negative numbers"
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": 0,
+        "description": "should handle single-element arrays"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-maximum-value-typescript"
+  },
+  {
+    "title": "Filter Even Numbers",
+    "description": "Create a function that filters out all odd numbers from an array and returns only the even ones.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "filterEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function filterEvenNumbers(arr: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should filter even numbers"
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "expected": [],
+        "description": "should return empty array when no even numbers"
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should return same array when all numbers are even"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "functions",
+      "loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "filter-even-numbers-typescript"
+  },
+  {
+    "title": "Create Greeter Function",
+    "description": "Create a greeter function that takes a name and returns a greeting message.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "createGreeting",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "string",
+    "template": "function createGreeting(name: string): string {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "John"
+        ],
+        "expected": "Hello, John!",
+        "description": "should greet John"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": "Hello, !",
+        "description": "should handle empty name"
+      }
+    ],
+    "conceptTags": [
+      "strings",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "create-greeter-function-typescript"
+  },
+  {
+    "title": "Calculate Factorial",
+    "description": "Create a recursive function to calculate the factorial of a number.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "factorial",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function factorial(n: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 120,
+        "description": "should calculate 5!"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1,
+        "description": "should handle 0!"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should handle 1!"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "calculate-factorial-typescript"
+  },
+  {
+    "title": "Calculate Fibonacci Number",
+    "description": "Create a recursive function to calculate the nth Fibonacci number.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "fibonacci",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function fibonacci(n: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should calculate fib(5)"
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55,
+        "description": "should calculate fib(10)"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "calculate-fibonacci-number-typescript"
+  },
+  {
+    "title": "Type-Safe Calculator",
+    "description": "Create a type-safe calculator function that performs basic operations.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "calculate",
+    "parameterTypes": [
+      "number",
+      "string",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function calculate(a: number, operation: string, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5,
+          "+",
+          3
+        ],
+        "expected": 8,
+        "description": "should add numbers"
+      },
+      {
+        "input": [
+          5,
+          "-",
+          3
+        ],
+        "expected": 2,
+        "description": "should subtract numbers"
+      },
+      {
+        "input": [
+          5,
+          "*",
+          3
+        ],
+        "expected": 15,
+        "description": "should multiply numbers"
+      },
+      {
+        "input": [
+          6,
+          "/",
+          3
+        ],
+        "expected": 2,
+        "description": "should divide numbers"
+      }
+    ],
+    "conceptTags": [
+      "type-annotations",
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "type-safe-calculator-typescript"
+  },
+  {
+    "title": "Create Type-Safe Person",
+    "description": "Create a function that returns a type-safe person object.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "createPerson",
+    "parameterTypes": [
+      "string",
+      "number"
+    ],
+    "returnType": "{ name: string; age: number; isAdult: boolean }",
+    "template": "function createPerson(name: string, age: number): { name: string; age: number; isAdult: boolean } {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "Alice",
+          25
+        ],
+        "expected": {
+          "name": "Alice",
+          "age": 25,
+          "isAdult": true
+        },
+        "description": "should create adult person"
+      },
+      {
+        "input": [
+          "Bob",
+          15
+        ],
+        "expected": {
+          "name": "Bob",
+          "age": 15,
+          "isAdult": false
+        },
+        "description": "should create minor person"
+      }
+    ],
+    "conceptTags": [
+      "objects",
+      "type-annotations",
+      "conditionals"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "create-type-safe-person-typescript"
+  },
+  {
+    "title": "Double the Numbers",
+    "description": "Create a function that takes an array of numbers and returns a new array with each number doubled.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "doubleNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function doubleNumbers(numbers: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "description": "should double positive numbers"
+      },
+      {
+        "input": [
+          [
+            -2,
+            0,
+            5
+          ]
+        ],
+        "expected": [
+          -4,
+          0,
+          10
+        ],
+        "description": "should handle negative numbers and zero"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "map",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "double-the-numbers-typescript"
+  },
+  {
+    "title": "Convert to Uppercase",
+    "description": "Create a function that takes an array of strings and returns a new array with all strings converted to uppercase.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "toUpperCase",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "string[]",
+    "template": "function toUpperCase(strings: string[]): string[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "hello",
+            "world"
+          ]
+        ],
+        "expected": [
+          "HELLO",
+          "WORLD"
+        ],
+        "description": "should convert lowercase strings to uppercase"
+      },
+      {
+        "input": [
+          [
+            "JavaScript",
+            "TypeScript",
+            "HTML"
+          ]
+        ],
+        "expected": [
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "HTML"
+        ],
+        "description": "should handle mixed case strings"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "map",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "convert-to-uppercase-typescript"
+  },
+  {
+    "title": "Even Numbers Only",
+    "description": "Create a function that takes an array of numbers and returns a new array containing only the even numbers.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "filterEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function filterEvenNumbers(numbers: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should filter out odd numbers"
+      },
+      {
+        "input": [
+          [
+            11,
+            13,
+            15
+          ]
+        ],
+        "expected": [],
+        "description": "should return empty array if no even numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "even-numbers-only-typescript"
+  },
+  {
+    "title": "Long Words",
+    "description": "Create a function that takes an array of strings and a minimum length, and returns a new array containing only strings that are longer than the specified length.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "filterLongWords",
+    "parameterTypes": [
+      "string[]",
+      "number"
+    ],
+    "returnType": "string[]",
+    "template": "function filterLongWords(words: string[], minLength: number): string[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "apple",
+            "banana",
+            "kiwi",
+            "strawberry"
+          ],
+          5
+        ],
+        "expected": [
+          "banana",
+          "strawberry"
+        ],
+        "description": "should filter words shorter than the specified length"
+      },
+      {
+        "input": [
+          [
+            "cat",
+            "dog",
+            "rat"
+          ],
+          4
+        ],
+        "expected": [],
+        "description": "should return empty array if no words meet criteria"
+      },
+      {
+        "input": [
+          [],
+          3
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "long-words-typescript"
+  },
+  {
+    "title": "Sum of Array",
+    "description": "Create a function that takes an array of numbers and returns the sum of all numbers in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "sumArray",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function sumArray(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 15,
+        "description": "should sum positive numbers"
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            5
+          ]
+        ],
+        "expected": 2,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0,
+        "description": "should return 0 for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "sum-of-array-typescript"
+  },
+  {
+    "title": "Find Maximum",
+    "description": "Create a function that takes an array of numbers and returns the maximum value in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "findMax",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function findMax(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            5,
+            12,
+            8,
+            130,
+            44
+          ]
+        ],
+        "expected": 130,
+        "description": "should find maximum in array with positive numbers"
+      },
+      {
+        "input": [
+          [
+            -10,
+            -5,
+            -2,
+            -15
+          ]
+        ],
+        "expected": -2,
+        "description": "should find maximum in array with negative numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": null,
+        "description": "should return null for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-maximum-typescript"
+  },
+  {
+    "title": "Average of Even Numbers",
+    "description": "Create a function that takes an array of numbers and returns the average of all even numbers in the array.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "averageOfEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function averageOfEvenNumbers(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": 4,
+        "description": "should calculate average of even numbers only"
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7
+          ]
+        ],
+        "expected": 0,
+        "description": "should return 0 if no even numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0,
+        "description": "should return 0 for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "average-of-even-numbers-typescript"
+  },
+  {
+    "title": "Word Length Map",
+    "description": "Create a function that takes an array of strings and returns an object where keys are the strings and values are their lengths.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "wordLengthMap",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "Record<string, number>",
+    "template": "function wordLengthMap(words: string[]): Record<string, number> {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "hello",
+            "world",
+            "javascript"
+          ]
+        ],
+        "expected": {
+          "hello": 5,
+          "world": 5,
+          "javascript": 10
+        },
+        "description": "should create a map of words and their lengths"
+      },
+      {
+        "input": [
+          [
+            "a",
+            "",
+            "xyz"
+          ]
+        ],
+        "expected": {
+          "a": 1,
+          "": 0,
+          "xyz": 3
+        },
+        "description": "should handle empty strings"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {},
+        "description": "should return empty object for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "objects"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "word-length-map-typescript"
+  },
+  {
+    "title": "Group By Length",
+    "description": "Create a function that takes an array of strings and groups them by their length.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "groupByLength",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "Record<number, string[]>",
+    "template": "function groupByLength(words: string[]): Record<number, string[]> {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "a",
+            "ab",
+            "abc",
+            "cd",
+            "def",
+            "gh"
+          ]
+        ],
+        "expected": {
+          "1": [
+            "a"
+          ],
+          "2": [
+            "ab",
+            "cd",
+            "gh"
+          ],
+          "3": [
+            "abc",
+            "def"
+          ]
+        },
+        "description": "should group strings by their length"
+      },
+      {
+        "input": [
+          [
+            "hello",
+            "world"
+          ]
+        ],
+        "expected": {
+          "5": [
+            "hello",
+            "world"
+          ]
+        },
+        "description": "should handle all strings of same length"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {},
+        "description": "should return empty object for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "objects",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "group-by-length-typescript"
+  },
+  {
+    "title": "Linear Search",
+    "description": "Implement a function that performs linear search to find the index of a target value in an array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "linearSearch",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function linearSearch(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": 2,
+        "description": "target in middle"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          4
+        ],
+        "expected": -1,
+        "description": "target not found"
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": -1,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "list-algorithms",
+      "iteration"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "linear-search-typescript"
+  },
+  {
+    "title": "Binary Search",
+    "description": "Implement binary search on a sorted array. Return the index of the target or -1 if not found.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "binarySearch",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function binarySearch(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          5
+        ],
+        "expected": 2,
+        "description": "target found"
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6,
+            8
+          ],
+          3
+        ],
+        "expected": -1,
+        "description": "target not found"
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": -1,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "list-algorithms",
+      "recursion",
+      "divide and conquer"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "binary-search-typescript"
+  },
+  {
+    "title": "Find First Duplicate",
+    "description": "Return the first duplicate number found in the array or -1 if none exist.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "firstDuplicate",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function firstDuplicate(arr: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            2,
+            1,
+            3,
+            5,
+            3,
+            2
+          ]
+        ],
+        "expected": 3,
+        "description": "3 is the first duplicate"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": -1,
+        "description": "no duplicates"
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 1,
+        "description": "immediate duplicate"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "hashing"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-first-duplicate-typescript"
+  },
+  {
+    "title": "Count Occurrences",
+    "description": "Count how many times a target number appears in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "countOccurrences",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function countOccurrences(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            2
+          ],
+          2
+        ],
+        "expected": 3,
+        "description": "multiple occurrences"
+      },
+      {
+        "input": [
+          [
+            4,
+            5,
+            6
+          ],
+          1
+        ],
+        "expected": 0,
+        "description": "none found"
+      },
+      {
+        "input": [
+          [],
+          0
+        ],
+        "expected": 0,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "iteration",
+      "counting"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "count-occurrences-typescript"
+  },
+  {
+    "title": "Check if Sorted",
+    "description": "Determine if an array is sorted in ascending order.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "isSorted",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "boolean",
+    "template": "function isSorted(arr: number[]): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": true,
+        "description": "sorted array"
+      },
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": false,
+        "description": "descending"
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": true,
+        "description": "single element"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "comparisons"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "check-if-sorted-typescript"
+  },
+  {
+    "title": "Deep Object Comparison",
+    "description": "Create a function that performs a deep comparison between two objects to determine if they have equivalent property values, including nested objects.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "deepEqual",
+    "parameterTypes": [
+      "any",
+      "any"
+    ],
+    "returnType": "boolean",
+    "template": "function deepEqual(obj1: any, obj2: any): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 2
+          }
+        ],
+        "expected": true,
+        "description": "should return true for identical simple objects"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 3
+          }
+        ],
+        "expected": false,
+        "description": "should return false when values differ"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          },
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          }
+        ],
+        "expected": true,
+        "description": "should handle nested objects when equal"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          },
+          {
+            "a": 1,
+            "b": {
+              "c": 4
+            }
+          }
+        ],
+        "expected": false,
+        "description": "should handle nested objects when not equal"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "c": 3
+          }
+        ],
+        "expected": false,
+        "description": "should return false when objects have different properties"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": true,
+        "description": "should handle arrays"
+      }
+    ],
+    "conceptTags": [
+      "objects",
+      "recursion",
+      "deep-comparison"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "deep-object-comparison-typescript"
+  },
+  {
+    "title": "Memoized Fibonacci",
+    "description": "Implement a memoized version of the Fibonacci function to efficiently calculate Fibonacci numbers by caching previous results.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "memoizedFibonacci",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function memoizedFibonacci(n: number): number {\n  // Write your code here\n  // Use memoization to optimize the recursive Fibonacci calculation\n}",
+    "testCases": [
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should calculate fib(5)"
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55,
+        "description": "should calculate fib(10)"
+      },
+      {
+        "input": [
+          30
+        ],
+        "expected": 832040,
+        "description": "should efficiently calculate fib(30)"
+      },
+      {
+        "input": [
+          40
+        ],
+        "expected": 102334155,
+        "description": "should efficiently calculate fib(40)"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions",
+      "memoization"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "memoized-fibonacci-typescript"
+  },
+  {
+    "title": "Custom Filter Function",
+    "description": "Implement your own version of the Array.filter() method that takes an array and a callback function, returning a new array with elements that pass the test.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "myFilter",
+    "parameterTypes": [
+      "T[]",
+      "(value: T, index: number, array: T[]) => boolean"
+    ],
+    "returnType": "T[]",
+    "template": "export function myFilter<T>(array: T[], callback: (value: T, index: number, array: T[]) => boolean): T[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "(num) => num % 2 === 0"
+        ],
+        "expected": [
+          2,
+          4
+        ],
+        "description": "should filter even numbers",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            "apple",
+            "banana",
+            "cherry",
+            "date"
+          ],
+          "(fruit) => fruit.length > 5"
+        ],
+        "expected": [
+          "banana",
+          "cherry"
+        ],
+        "description": "should filter strings by length",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            0,
+            -1,
+            5,
+            -10,
+            8
+          ],
+          "(num) => num < 0"
+        ],
+        "expected": [
+          -1,
+          -10
+        ],
+        "description": "should filter negative numbers",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [],
+          "(x) => true"
+        ],
+        "expected": [],
+        "description": "should handle empty arrays",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          "(num, index) => index < 2"
+        ],
+        "expected": [
+          1,
+          2
+        ],
+        "description": "should use index parameter correctly",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "higher-order-functions",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "custom-filter-function-typescript"
+  },
+  {
+    "title": "Go Variables and Basic Types",
+    "description": "Create a function that demonstrates Go's basic types by declaring variables of different types and returning their values.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-variables-basic-types",
+    "functionName": "demonstrateTypes",
+    "parameterTypes": [],
+    "returnType": "string",
+    "template": "package main\n\nfunc demonstrateTypes() string {\n    // Declare variables of different types\n    // Return a formatted string showing the values\n    // Format: \"int: 42, float: 3.14, bool: true, string: hello\"\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "int: 42, float: 3.14, bool: true, string: hello",
+        "description": "should demonstrate basic Go types"
+      }
+    ],
+    "conceptTags": ["variables-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Constants and Iota",
+    "description": "Create constants using iota to represent days of the week, and return the name of a given day number.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-constants-iota",
+    "functionName": "getDayName",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nfunc getDayName(day int) string {\n    // Define constants for days using iota\n    // Return the name of the day (0=Sunday, 1=Monday, etc.)\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [0],
+        "expected": "Sunday",
+        "description": "should return Sunday for 0"
+      },
+      {
+        "input": [1],
+        "expected": "Monday",
+        "description": "should return Monday for 1"
+      },
+      {
+        "input": [6],
+        "expected": "Saturday",
+        "description": "should return Saturday for 6"
+      }
+    ],
+    "conceptTags": ["constants-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Multiple Return Values",
+    "description": "Create a function that returns both the quotient and remainder of integer division.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-multiple-return-values",
+    "functionName": "divmod",
+    "parameterTypes": ["int", "int"],
+    "returnType": "(int, int)",
+    "template": "package main\n\nfunc divmod(a, b int) (int, int) {\n    // Return quotient and remainder\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [10, 3],
+        "expected": [3, 1],
+        "description": "should return quotient and remainder"
+      },
+      {
+        "input": [20, 4],
+        "expected": [5, 0],
+        "description": "should handle even division"
+      }
+    ],
+    "conceptTags": ["functions-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Conditional Grade Calculator",
+    "description": "Create a function that returns a letter grade based on a numeric score using if/else statements.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-conditional-grade",
+    "functionName": "getGrade",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nfunc getGrade(score int) string {\n    // Return letter grade: A (90+), B (80-89), C (70-79), D (60-69), F (<60)\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [95],
+        "expected": "A",
+        "description": "should return A for 90+"
+      },
+      {
+        "input": [85],
+        "expected": "B",
+        "description": "should return B for 80-89"
+      },
+      {
+        "input": [55],
+        "expected": "F",
+        "description": "should return F for under 60"
+      }
+    ],
+    "conceptTags": ["conditionals-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go For Loop Sum",
+    "description": "Create a function that calculates the sum of numbers from 1 to n using a for loop.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-for-loop-sum",
+    "functionName": "sumToN",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc sumToN(n int) int {\n    // Calculate sum of 1 + 2 + ... + n using for loop\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [5],
+        "expected": 15,
+        "description": "should calculate sum 1+2+3+4+5"
+      },
+      {
+        "input": [10],
+        "expected": 55,
+        "description": "should calculate sum 1+2+...+10"
+      },
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": ["loops-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Array Operations",
+    "description": "Create a function that finds the maximum value in a fixed-size array of 5 integers.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-array-max",
+    "functionName": "findMax",
+    "parameterTypes": ["[5]int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc findMax(arr [5]int) int {\n    // Find and return the maximum value in the array\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 5, 3, 2, 4]],
+        "expected": 5,
+        "description": "should find maximum value"
+      },
+      {
+        "input": [[-1, -5, -3, -2, -4]],
+        "expected": -1,
+        "description": "should handle negative numbers"
+      }
+    ],
+    "conceptTags": ["arrays-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Slice Append",
+    "description": "Create a function that takes a slice of integers and appends only the even numbers to a new slice.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-slice-append-even",
+    "functionName": "getEvenNumbers",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc getEvenNumbers(numbers []int) []int {\n    // Create a new slice with only even numbers\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4, 5, 6]],
+        "expected": [2, 4, 6],
+        "description": "should filter even numbers"
+      },
+      {
+        "input": [[1, 3, 5]],
+        "expected": [],
+        "description": "should return empty slice for all odd"
+      }
+    ],
+    "conceptTags": ["slices-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Map Word Count",
+    "description": "Create a function that counts the frequency of each word in a slice of strings using a map.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-map-word-count",
+    "functionName": "countWords",
+    "parameterTypes": ["[]string"],
+    "returnType": "map[string]int",
+    "template": "package main\n\nfunc countWords(words []string) map[string]int {\n    // Count frequency of each word\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [["hello", "world", "hello", "go"]],
+        "expected": {"hello": 2, "world": 1, "go": 1},
+        "description": "should count word frequencies"
+      },
+      {
+        "input": [["test", "test", "test"]],
+        "expected": {"test": 3},
+        "description": "should handle repeated words"
+      }
+    ],
+    "conceptTags": ["maps-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Struct Person",
+    "description": "Create a Person struct with Name and Age fields, and a function that creates and returns a Person.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-struct-person",
+    "functionName": "createPerson",
+    "parameterTypes": ["string", "int"],
+    "returnType": "Person",
+    "template": "package main\n\ntype Person struct {\n    Name string\n    Age  int\n}\n\nfunc createPerson(name string, age int) Person {\n    // Create and return a Person struct\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Alice", 30],
+        "expected": {"Name": "Alice", "Age": 30},
+        "description": "should create Person struct"
+      },
+      {
+        "input": ["Bob", 25],
+        "expected": {"Name": "Bob", "Age": 25},
+        "description": "should create another Person struct"
+      }
+    ],
+    "conceptTags": ["structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Pointer and Method",
+    "description": "Create a Counter struct with a method to increment its value using pointer receivers.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-pointer-method",
+    "functionName": "newCounter",
+    "parameterTypes": [],
+    "returnType": "*Counter",
+    "template": "package main\n\ntype Counter struct {\n    value int\n}\n\nfunc (c *Counter) Increment() {\n    // Increment the counter value\n}\n\nfunc (c *Counter) Value() int {\n    // Return the current value\n    return c.value\n}\n\nfunc newCounter() *Counter {\n    // Create and return a new Counter\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [],
+        "expected": 0,
+        "description": "should create counter with initial value 0",
+        "testFunction": "func test() int { c := newCounter(); return c.Value() }"
+      }
+    ],
+    "conceptTags": ["pointers-methods-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  }
+]

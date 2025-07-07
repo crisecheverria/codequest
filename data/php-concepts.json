@@ -1,0 +1,369 @@
+[
+  {
+    "name": "PHP Basics",
+    "slug": "php-basics",
+    "description": "Learn the fundamental concepts of PHP, including syntax, variables, and data types.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 1,
+    "dependencies": [],
+    "resources": [
+      {
+        "title": "PHP Manual: Getting Started",
+        "url": "https://www.php.net/manual/en/getting-started.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Basic Syntax",
+        "url": "https://www.php.net/manual/en/language.basic-syntax.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Variables",
+        "url": "https://www.php.net/manual/en/language.variables.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Functions",
+    "slug": "php-functions",
+    "description": "Learn how to define and use functions in PHP, including parameters, return values, and scope.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 2,
+    "dependencies": ["php-basics"],
+    "resources": [
+      {
+        "title": "PHP Function Reference",
+        "url": "https://www.php.net/manual/en/language.functions.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Function Arguments",
+        "url": "https://www.php.net/manual/en/functions.arguments.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Return Values",
+        "url": "https://www.php.net/manual/en/functions.returning-values.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Strings",
+    "slug": "php-strings",
+    "description": "Learn how to manipulate strings in PHP using built-in functions and methods.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 3,
+    "dependencies": ["php-basics"],
+    "resources": [
+      {
+        "title": "PHP String Functions",
+        "url": "https://www.php.net/manual/en/ref.strings.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP String Operators",
+        "url": "https://www.php.net/manual/en/language.operators.string.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Arrays",
+    "slug": "php-arrays",
+    "description": "Learn how to create and manipulate arrays in PHP, including indexed and associative arrays.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 4,
+    "dependencies": ["php-basics"],
+    "resources": [
+      {
+        "title": "PHP Array Functions",
+        "url": "https://www.php.net/manual/en/ref.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Array Creation",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Associative Arrays",
+    "slug": "php-associative-arrays",
+    "description": "Learn how to work with key-value pairs in PHP using associative arrays.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 5,
+    "dependencies": ["php-arrays"],
+    "resources": [
+      {
+        "title": "PHP Associative Arrays",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Array Functions for Associative Arrays",
+        "url": "https://www.php.net/manual/en/ref.array.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Loops",
+    "slug": "php-loops",
+    "description": "Learn how to use loops in PHP, including for, foreach, while, and do-while loops.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 6,
+    "dependencies": ["php-basics"],
+    "resources": [
+      {
+        "title": "PHP Control Structures: Loops",
+        "url": "https://www.php.net/manual/en/language.control-structures.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP foreach Loop",
+        "url": "https://www.php.net/manual/en/control-structures.foreach.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Error Handling",
+    "slug": "php-error-handling",
+    "description": "Learn how to handle errors and exceptions in PHP.",
+    "category": "intermediate",
+    "language": "php",
+    "order": 7,
+    "dependencies": ["php-functions"],
+    "resources": [
+      {
+        "title": "PHP Error Handling",
+        "url": "https://www.php.net/manual/en/book.errorfunc.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Exceptions",
+        "url": "https://www.php.net/manual/en/language.exceptions.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Object-Oriented Programming",
+    "slug": "php-oop",
+    "description": "Learn about object-oriented programming concepts in PHP.",
+    "category": "intermediate",
+    "language": "php",
+    "order": 8,
+    "dependencies": ["php-functions"],
+    "resources": [
+      {
+        "title": "PHP Classes and Objects",
+        "url": "https://www.php.net/manual/en/language.oop5.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Object Inheritance",
+        "url": "https://www.php.net/manual/en/language.oop5.inheritance.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Classes",
+    "slug": "php-classes",
+    "description": "Learn how to create and use classes in PHP.",
+    "category": "intermediate",
+    "language": "php",
+    "order": 9,
+    "dependencies": ["php-oop"],
+    "resources": [
+      {
+        "title": "PHP Class Definition",
+        "url": "https://www.php.net/manual/en/language.oop5.basic.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Class Properties",
+        "url": "https://www.php.net/manual/en/language.oop5.properties.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Class Methods",
+        "url": "https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.methods",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Math Functions",
+    "slug": "php-math",
+    "description": "Learn how to perform mathematical operations in PHP using built-in functions.",
+    "category": "fundamentals",
+    "language": "php",
+    "order": 10,
+    "dependencies": ["php-basics"],
+    "resources": [
+      {
+        "title": "PHP Math Functions",
+        "url": "https://www.php.net/manual/en/ref.math.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Number Handling",
+        "url": "https://www.php.net/manual/en/language.types.numeric.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Search Algorithms",
+    "slug": "php-search-algorithms",
+    "description": "Learn and implement different search algorithms in PHP, including linear and binary search techniques.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 11,
+    "dependencies": ["php-arrays", "php-loops"],
+    "resources": [
+      {
+        "title": "PHP Arrays",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Search Algorithms",
+        "url": "https://www.geeksforgeeks.org/searching-algorithms/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "PHP Linear Search",
+    "slug": "php-linear-search",
+    "description": "Implement the linear search algorithm in PHP to find elements in an array by checking each element sequentially.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 12,
+    "dependencies": ["php-search-algorithms"],
+    "resources": [
+      {
+        "title": "PHP Arrays",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "Linear Search Algorithm",
+        "url": "https://www.geeksforgeeks.org/linear-search/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "PHP Binary Search",
+    "slug": "php-binary-search",
+    "description": "Implement the binary search algorithm in PHP to efficiently find elements in sorted arrays using a divide-and-conquer approach.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 13,
+    "dependencies": ["php-search-algorithms"],
+    "resources": [
+      {
+        "title": "PHP Arrays",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "Binary Search Algorithm",
+        "url": "https://www.geeksforgeeks.org/binary-search/",
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "name": "PHP Array Analysis",
+    "slug": "php-array-analysis",
+    "description": "Learn techniques to analyze array properties, patterns, and characteristics in PHP.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 14,
+    "dependencies": ["php-arrays"],
+    "resources": [
+      {
+        "title": "PHP Array Functions",
+        "url": "https://www.php.net/manual/en/ref.array.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Array Validation",
+    "slug": "php-array-validation",
+    "description": "Learn how to validate array properties like checking if an array is sorted, validating element values, or verifying array structure.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 15,
+    "dependencies": ["php-array-analysis"],
+    "resources": [
+      {
+        "title": "PHP Array Functions",
+        "url": "https://www.php.net/manual/en/ref.array.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Sorting Functions",
+        "url": "https://www.php.net/manual/en/array.sorting.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Duplicate Handling",
+    "slug": "php-duplicate-handling",
+    "description": "Learn techniques to detect, remove, and manage duplicate elements in PHP arrays.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 16,
+    "dependencies": ["php-array-analysis", "php-associative-arrays"],
+    "resources": [
+      {
+        "title": "PHP array_count_values",
+        "url": "https://www.php.net/manual/en/function.array-count-values.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP array_unique",
+        "url": "https://www.php.net/manual/en/function.array-unique.php",
+        "type": "documentation"
+      }
+    ]
+  },
+  {
+    "name": "PHP Frequency Counting",
+    "slug": "php-frequency-counting",
+    "description": "Learn how to count and analyze the frequency of elements in PHP arrays.",
+    "category": "algorithms",
+    "language": "php",
+    "order": 17,
+    "dependencies": ["php-array-analysis", "php-associative-arrays"],
+    "resources": [
+      {
+        "title": "PHP array_count_values",
+        "url": "https://www.php.net/manual/en/function.array-count-values.php",
+        "type": "documentation"
+      },
+      {
+        "title": "PHP Associative Arrays",
+        "url": "https://www.php.net/manual/en/language.types.array.php",
+        "type": "documentation"
+      }
+    ]
+  }
+]
