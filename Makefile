@@ -33,12 +33,17 @@ test-integration:
 # Build the CLI binary
 build:
 	@echo "Building CLI binary..."
+	@echo "Copying data files to internal/challenge/..."
+	cp data/challenges.json internal/challenge/
+	cp data/concepts.json internal/challenge/
 	go build -o codequest .
 
 # Clean build artifacts
 clean:
 	@echo "Cleaning build artifacts..."
 	rm -f codequest
+	rm -f internal/challenge/challenges.json
+	rm -f internal/challenge/concepts.json
 	go clean
 
 # Format Go code

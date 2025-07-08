@@ -1,0 +1,3296 @@
+[
+  {
+    "title": "Add Two Numbers",
+    "description": "Create a function that takes two numbers and returns their sum.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "slug": "add-two-numbers-typescript",
+    "functionName": "sum",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function sum(a: number, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          1,
+          2
+        ],
+        "expected": 3,
+        "description": "should add positive numbers"
+      },
+      {
+        "input": [
+          -1,
+          1
+        ],
+        "expected": 0,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": 0,
+        "description": "should handle zeros"
+      }
+    ],
+    "conceptTags": [
+      "operators",
+      "variables"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Multiply Two Numbers",
+    "description": "Create a function that takes two numbers and returns their product.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "slug": "multiply-two-numbers-typescript",
+    "functionName": "multiply",
+    "parameterTypes": [
+      "number",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function multiply(a: number, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          2,
+          3
+        ],
+        "expected": 6,
+        "description": "should multiply positive numbers"
+      },
+      {
+        "input": [
+          -2,
+          3
+        ],
+        "expected": -6,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "expected": 0,
+        "description": "should handle zeros"
+      }
+    ],
+    "conceptTags": [
+      "variables",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Check if Number is Even",
+    "description": "Create a function that returns true if a number is even, and false if it's odd.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "isEven",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "boolean",
+    "template": "function isEven(num: number): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          2
+        ],
+        "expected": true,
+        "description": "should return true for even numbers"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": false,
+        "description": "should return false for odd numbers"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": true,
+        "description": "should handle zero"
+      },
+      {
+        "input": [
+          -4
+        ],
+        "expected": true,
+        "description": "should handle negative even numbers"
+      }
+    ],
+    "conceptTags": [
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "check-if-number-is-even-typescript"
+  },
+  {
+    "title": "Get Absolute Value",
+    "description": "Create a function that returns the absolute value of a number.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "getAbsoluteValue",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function getAbsoluteValue(num: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should return positive numbers unchanged"
+      },
+      {
+        "input": [
+          -5
+        ],
+        "expected": 5,
+        "description": "should convert negative numbers to positive"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": [
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "get-absolute-value-typescript"
+  },
+  {
+    "title": "Reverse a String",
+    "description": "Create a function that reverses a string.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "reverseString",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "string",
+    "template": "function reverseString(str: string): string {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "olleh",
+        "description": "should reverse normal strings"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": "",
+        "description": "should handle empty strings"
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "a",
+        "description": "should handle single character strings"
+      }
+    ],
+    "conceptTags": [
+      "strings",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "reverse-a-string-typescript"
+  },
+  {
+    "title": "Count Vowels",
+    "description": "Create a function that counts the number of vowels in a string.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "countVowels",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "number",
+    "template": "function countVowels(str: string): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": 2,
+        "description": "should count vowels correctly"
+      },
+      {
+        "input": [
+          "aeiou"
+        ],
+        "expected": 5,
+        "description": "should count all vowels"
+      },
+      {
+        "input": [
+          "xyz"
+        ],
+        "expected": 0,
+        "description": "should handle strings with no vowels"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": 0,
+        "description": "should handle empty strings"
+      }
+    ],
+    "conceptTags": [
+      "loops",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "count-vowels-typescript"
+  },
+  {
+    "title": "Find Maximum Value",
+    "description": "Create a function that finds the maximum value in an array of numbers.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "findMax",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function findMax(arr: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            2,
+            4
+          ]
+        ],
+        "expected": 5,
+        "description": "should find max in positive numbers"
+      },
+      {
+        "input": [
+          [
+            -1,
+            -3,
+            -5,
+            -2,
+            -4
+          ]
+        ],
+        "expected": -1,
+        "description": "should find max in negative numbers"
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": 0,
+        "description": "should handle single-element arrays"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-maximum-value-typescript"
+  },
+  {
+    "title": "Filter Even Numbers",
+    "description": "Create a function that filters out all odd numbers from an array and returns only the even ones.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "filterEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function filterEvenNumbers(arr: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should filter even numbers"
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "expected": [],
+        "description": "should return empty array when no even numbers"
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should return same array when all numbers are even"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "functions",
+      "loops"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "filter-even-numbers-typescript"
+  },
+  {
+    "title": "Create Greeter Function",
+    "description": "Create a greeter function that takes a name and returns a greeting message.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "createGreeting",
+    "parameterTypes": [
+      "string"
+    ],
+    "returnType": "string",
+    "template": "function createGreeting(name: string): string {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "John"
+        ],
+        "expected": "Hello, John!",
+        "description": "should greet John"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": "Hello, !",
+        "description": "should handle empty name"
+      }
+    ],
+    "conceptTags": [
+      "strings",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "create-greeter-function-typescript"
+  },
+  {
+    "title": "Calculate Factorial",
+    "description": "Create a recursive function to calculate the factorial of a number.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "factorial",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function factorial(n: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5
+        ],
+        "expected": 120,
+        "description": "should calculate 5!"
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1,
+        "description": "should handle 0!"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should handle 1!"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "calculate-factorial-typescript"
+  },
+  {
+    "title": "Calculate Fibonacci Number",
+    "description": "Create a recursive function to calculate the nth Fibonacci number.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "fibonacci",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function fibonacci(n: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should calculate fib(5)"
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55,
+        "description": "should calculate fib(10)"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "calculate-fibonacci-number-typescript"
+  },
+  {
+    "title": "Type-Safe Calculator",
+    "description": "Create a type-safe calculator function that performs basic operations.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "calculate",
+    "parameterTypes": [
+      "number",
+      "string",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function calculate(a: number, operation: string, b: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          5,
+          "+",
+          3
+        ],
+        "expected": 8,
+        "description": "should add numbers"
+      },
+      {
+        "input": [
+          5,
+          "-",
+          3
+        ],
+        "expected": 2,
+        "description": "should subtract numbers"
+      },
+      {
+        "input": [
+          5,
+          "*",
+          3
+        ],
+        "expected": 15,
+        "description": "should multiply numbers"
+      },
+      {
+        "input": [
+          6,
+          "/",
+          3
+        ],
+        "expected": 2,
+        "description": "should divide numbers"
+      }
+    ],
+    "conceptTags": [
+      "type-annotations",
+      "conditionals",
+      "operators"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "type-safe-calculator-typescript"
+  },
+  {
+    "title": "Create Type-Safe Person",
+    "description": "Create a function that returns a type-safe person object.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "createPerson",
+    "parameterTypes": [
+      "string",
+      "number"
+    ],
+    "returnType": "{ name: string; age: number; isAdult: boolean }",
+    "template": "function createPerson(name: string, age: number): { name: string; age: number; isAdult: boolean } {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          "Alice",
+          25
+        ],
+        "expected": {
+          "name": "Alice",
+          "age": 25,
+          "isAdult": true
+        },
+        "description": "should create adult person"
+      },
+      {
+        "input": [
+          "Bob",
+          15
+        ],
+        "expected": {
+          "name": "Bob",
+          "age": 15,
+          "isAdult": false
+        },
+        "description": "should create minor person"
+      }
+    ],
+    "conceptTags": [
+      "objects",
+      "type-annotations",
+      "conditionals"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "create-type-safe-person-typescript"
+  },
+  {
+    "title": "Double the Numbers",
+    "description": "Create a function that takes an array of numbers and returns a new array with each number doubled.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "doubleNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function doubleNumbers(numbers: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "description": "should double positive numbers"
+      },
+      {
+        "input": [
+          [
+            -2,
+            0,
+            5
+          ]
+        ],
+        "expected": [
+          -4,
+          0,
+          10
+        ],
+        "description": "should handle negative numbers and zero"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "map",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "double-the-numbers-typescript"
+  },
+  {
+    "title": "Convert to Uppercase",
+    "description": "Create a function that takes an array of strings and returns a new array with all strings converted to uppercase.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "toUpperCase",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "string[]",
+    "template": "function toUpperCase(strings: string[]): string[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "hello",
+            "world"
+          ]
+        ],
+        "expected": [
+          "HELLO",
+          "WORLD"
+        ],
+        "description": "should convert lowercase strings to uppercase"
+      },
+      {
+        "input": [
+          [
+            "JavaScript",
+            "TypeScript",
+            "HTML"
+          ]
+        ],
+        "expected": [
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "HTML"
+        ],
+        "description": "should handle mixed case strings"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "map",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "convert-to-uppercase-typescript"
+  },
+  {
+    "title": "Even Numbers Only",
+    "description": "Create a function that takes an array of numbers and returns a new array containing only the even numbers.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "filterEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number[]",
+    "template": "function filterEvenNumbers(numbers: number[]): number[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          2,
+          4,
+          6
+        ],
+        "description": "should filter out odd numbers"
+      },
+      {
+        "input": [
+          [
+            11,
+            13,
+            15
+          ]
+        ],
+        "expected": [],
+        "description": "should return empty array if no even numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "even-numbers-only-typescript"
+  },
+  {
+    "title": "Long Words",
+    "description": "Create a function that takes an array of strings and a minimum length, and returns a new array containing only strings that are longer than the specified length.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "filterLongWords",
+    "parameterTypes": [
+      "string[]",
+      "number"
+    ],
+    "returnType": "string[]",
+    "template": "function filterLongWords(words: string[], minLength: number): string[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "apple",
+            "banana",
+            "kiwi",
+            "strawberry"
+          ],
+          5
+        ],
+        "expected": [
+          "banana",
+          "strawberry"
+        ],
+        "description": "should filter words shorter than the specified length"
+      },
+      {
+        "input": [
+          [
+            "cat",
+            "dog",
+            "rat"
+          ],
+          4
+        ],
+        "expected": [],
+        "description": "should return empty array if no words meet criteria"
+      },
+      {
+        "input": [
+          [],
+          3
+        ],
+        "expected": [],
+        "description": "should handle empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "strings"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "long-words-typescript"
+  },
+  {
+    "title": "Sum of Array",
+    "description": "Create a function that takes an array of numbers and returns the sum of all numbers in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "sumArray",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function sumArray(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 15,
+        "description": "should sum positive numbers"
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            5
+          ]
+        ],
+        "expected": 2,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0,
+        "description": "should return 0 for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "sum-of-array-typescript"
+  },
+  {
+    "title": "Find Maximum",
+    "description": "Create a function that takes an array of numbers and returns the maximum value in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "findMax",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function findMax(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            5,
+            12,
+            8,
+            130,
+            44
+          ]
+        ],
+        "expected": 130,
+        "description": "should find maximum in array with positive numbers"
+      },
+      {
+        "input": [
+          [
+            -10,
+            -5,
+            -2,
+            -15
+          ]
+        ],
+        "expected": -2,
+        "description": "should find maximum in array with negative numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": null,
+        "description": "should return null for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-maximum-typescript"
+  },
+  {
+    "title": "Average of Even Numbers",
+    "description": "Create a function that takes an array of numbers and returns the average of all even numbers in the array.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "averageOfEvenNumbers",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function averageOfEvenNumbers(numbers: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "expected": 4,
+        "description": "should calculate average of even numbers only"
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7
+          ]
+        ],
+        "expected": 0,
+        "description": "should return 0 if no even numbers"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0,
+        "description": "should return 0 for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "reduce",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "average-of-even-numbers-typescript"
+  },
+  {
+    "title": "Word Length Map",
+    "description": "Create a function that takes an array of strings and returns an object where keys are the strings and values are their lengths.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "wordLengthMap",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "Record<string, number>",
+    "template": "function wordLengthMap(words: string[]): Record<string, number> {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "hello",
+            "world",
+            "javascript"
+          ]
+        ],
+        "expected": {
+          "hello": 5,
+          "world": 5,
+          "javascript": 10
+        },
+        "description": "should create a map of words and their lengths"
+      },
+      {
+        "input": [
+          [
+            "a",
+            "",
+            "xyz"
+          ]
+        ],
+        "expected": {
+          "a": 1,
+          "": 0,
+          "xyz": 3
+        },
+        "description": "should handle empty strings"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {},
+        "description": "should return empty object for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "objects"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "word-length-map-typescript"
+  },
+  {
+    "title": "Group By Length",
+    "description": "Create a function that takes an array of strings and groups them by their length.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "groupByLength",
+    "parameterTypes": [
+      "string[]"
+    ],
+    "returnType": "Record<number, string[]>",
+    "template": "function groupByLength(words: string[]): Record<number, string[]> {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            "a",
+            "ab",
+            "abc",
+            "cd",
+            "def",
+            "gh"
+          ]
+        ],
+        "expected": {
+          "1": [
+            "a"
+          ],
+          "2": [
+            "ab",
+            "cd",
+            "gh"
+          ],
+          "3": [
+            "abc",
+            "def"
+          ]
+        },
+        "description": "should group strings by their length"
+      },
+      {
+        "input": [
+          [
+            "hello",
+            "world"
+          ]
+        ],
+        "expected": {
+          "5": [
+            "hello",
+            "world"
+          ]
+        },
+        "description": "should handle all strings of same length"
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": {},
+        "description": "should return empty object for empty arrays"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "reduce",
+      "objects",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "group-by-length-typescript"
+  },
+  {
+    "title": "Linear Search",
+    "description": "Implement a function that performs linear search to find the index of a target value in an array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "linearSearch",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function linearSearch(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": 2,
+        "description": "target in middle"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          4
+        ],
+        "expected": -1,
+        "description": "target not found"
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": -1,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "list-algorithms",
+      "iteration"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "linear-search-typescript"
+  },
+  {
+    "title": "Binary Search",
+    "description": "Implement binary search on a sorted array. Return the index of the target or -1 if not found.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "binarySearch",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function binarySearch(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          5
+        ],
+        "expected": 2,
+        "description": "target found"
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            6,
+            8
+          ],
+          3
+        ],
+        "expected": -1,
+        "description": "target not found"
+      },
+      {
+        "input": [
+          [],
+          1
+        ],
+        "expected": -1,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "arrays",
+      "list-algorithms",
+      "recursion",
+      "divide and conquer"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "binary-search-typescript"
+  },
+  {
+    "title": "Find First Duplicate",
+    "description": "Return the first duplicate number found in the array or -1 if none exist.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "firstDuplicate",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "number",
+    "template": "function firstDuplicate(arr: number[]): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            2,
+            1,
+            3,
+            5,
+            3,
+            2
+          ]
+        ],
+        "expected": 3,
+        "description": "3 is the first duplicate"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": -1,
+        "description": "no duplicates"
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 1,
+        "description": "immediate duplicate"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "hashing"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "find-first-duplicate-typescript"
+  },
+  {
+    "title": "Count Occurrences",
+    "description": "Count how many times a target number appears in the array.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "countOccurrences",
+    "parameterTypes": [
+      "number[]",
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function countOccurrences(arr: number[], target: number): number {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            2,
+            3,
+            2
+          ],
+          2
+        ],
+        "expected": 3,
+        "description": "multiple occurrences"
+      },
+      {
+        "input": [
+          [
+            4,
+            5,
+            6
+          ],
+          1
+        ],
+        "expected": 0,
+        "description": "none found"
+      },
+      {
+        "input": [
+          [],
+          0
+        ],
+        "expected": 0,
+        "description": "empty array"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "iteration",
+      "counting"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "count-occurrences-typescript"
+  },
+  {
+    "title": "Check if Sorted",
+    "description": "Determine if an array is sorted in ascending order.",
+    "difficulty": "easy",
+    "language": "typescript",
+    "functionName": "isSorted",
+    "parameterTypes": [
+      "number[]"
+    ],
+    "returnType": "boolean",
+    "template": "function isSorted(arr: number[]): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": true,
+        "description": "sorted array"
+      },
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": false,
+        "description": "descending"
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": true,
+        "description": "single element"
+      }
+    ],
+    "conceptTags": [
+      "list-algorithms",
+      "arrays",
+      "comparisons"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "check-if-sorted-typescript"
+  },
+  {
+    "title": "Deep Object Comparison",
+    "description": "Create a function that performs a deep comparison between two objects to determine if they have equivalent property values, including nested objects.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "deepEqual",
+    "parameterTypes": [
+      "any",
+      "any"
+    ],
+    "returnType": "boolean",
+    "template": "function deepEqual(obj1: any, obj2: any): boolean {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 2
+          }
+        ],
+        "expected": true,
+        "description": "should return true for identical simple objects"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 3
+          }
+        ],
+        "expected": false,
+        "description": "should return false when values differ"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          },
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          }
+        ],
+        "expected": true,
+        "description": "should handle nested objects when equal"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": {
+              "c": 3
+            }
+          },
+          {
+            "a": 1,
+            "b": {
+              "c": 4
+            }
+          }
+        ],
+        "expected": false,
+        "description": "should handle nested objects when not equal"
+      },
+      {
+        "input": [
+          {
+            "a": 1,
+            "b": 2
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "c": 3
+          }
+        ],
+        "expected": false,
+        "description": "should return false when objects have different properties"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": true,
+        "description": "should handle arrays"
+      }
+    ],
+    "conceptTags": [
+      "objects",
+      "recursion",
+      "deep-comparison"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "deep-object-comparison-typescript"
+  },
+  {
+    "title": "Memoized Fibonacci",
+    "description": "Implement a memoized version of the Fibonacci function to efficiently calculate Fibonacci numbers by caching previous results.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "memoizedFibonacci",
+    "parameterTypes": [
+      "number"
+    ],
+    "returnType": "number",
+    "template": "function memoizedFibonacci(n: number): number {\n  // Write your code here\n  // Use memoization to optimize the recursive Fibonacci calculation\n}",
+    "testCases": [
+      {
+        "input": [
+          0
+        ],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5,
+        "description": "should calculate fib(5)"
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55,
+        "description": "should calculate fib(10)"
+      },
+      {
+        "input": [
+          30
+        ],
+        "expected": 832040,
+        "description": "should efficiently calculate fib(30)"
+      },
+      {
+        "input": [
+          40
+        ],
+        "expected": 102334155,
+        "description": "should efficiently calculate fib(40)"
+      }
+    ],
+    "conceptTags": [
+      "recursion",
+      "functions",
+      "memoization"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "memoized-fibonacci-typescript"
+  },
+  {
+    "title": "Custom Filter Function",
+    "description": "Implement your own version of the Array.filter() method that takes an array and a callback function, returning a new array with elements that pass the test.",
+    "difficulty": "medium",
+    "language": "typescript",
+    "functionName": "myFilter",
+    "parameterTypes": [
+      "T[]",
+      "(value: T, index: number, array: T[]) => boolean"
+    ],
+    "returnType": "T[]",
+    "template": "export function myFilter<T>(array: T[], callback: (value: T, index: number, array: T[]) => boolean): T[] {\n  // Write your code here\n}",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "(num) => num % 2 === 0"
+        ],
+        "expected": [
+          2,
+          4
+        ],
+        "description": "should filter even numbers",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            "apple",
+            "banana",
+            "cherry",
+            "date"
+          ],
+          "(fruit) => fruit.length > 5"
+        ],
+        "expected": [
+          "banana",
+          "cherry"
+        ],
+        "description": "should filter strings by length",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            0,
+            -1,
+            5,
+            -10,
+            8
+          ],
+          "(num) => num < 0"
+        ],
+        "expected": [
+          -1,
+          -10
+        ],
+        "description": "should filter negative numbers",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [],
+          "(x) => true"
+        ],
+        "expected": [],
+        "description": "should handle empty arrays",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          "(num, index) => index < 2"
+        ],
+        "expected": [
+          1,
+          2
+        ],
+        "description": "should use index parameter correctly",
+        "testFunction": "function test(array, callbackStr) {\n  const callback = eval(callbackStr);\n  return myFilter(array, callback);\n}"
+      }
+    ],
+    "conceptTags": [
+      "functional-programming",
+      "filter",
+      "higher-order-functions",
+      "arrays"
+    ],
+    "timeLimit": 5000,
+    "memoryLimit": 128,
+    "slug": "custom-filter-function-typescript"
+  },
+  {
+    "title": "Go Variables and Basic Types",
+    "description": "Create a function that demonstrates Go's basic types by declaring variables of different types and returning their values.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-variables-basic-types",
+    "functionName": "demonstrateTypes",
+    "parameterTypes": [],
+    "returnType": "string",
+    "template": "package main\n\nfunc demonstrateTypes() string {\n    // Declare variables of different types\n    // Return a formatted string showing the values\n    // Format: \"int: 42, float: 3.14, bool: true, string: hello\"\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "int: 42, float: 3.14, bool: true, string: hello",
+        "description": "should demonstrate basic Go types"
+      }
+    ],
+    "conceptTags": ["variables-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Constants and Iota",
+    "description": "Create constants using iota to represent days of the week, and return the name of a given day number.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-constants-iota",
+    "functionName": "getDayName",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nfunc getDayName(day int) string {\n    // Define constants for days using iota\n    // Return the name of the day (0=Sunday, 1=Monday, etc.)\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [0],
+        "expected": "Sunday",
+        "description": "should return Sunday for 0"
+      },
+      {
+        "input": [1],
+        "expected": "Monday",
+        "description": "should return Monday for 1"
+      },
+      {
+        "input": [6],
+        "expected": "Saturday",
+        "description": "should return Saturday for 6"
+      }
+    ],
+    "conceptTags": ["constants-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Multiple Return Values",
+    "description": "Create a function that returns both the quotient and remainder of integer division.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-multiple-return-values",
+    "functionName": "divmod",
+    "parameterTypes": ["int", "int"],
+    "returnType": "(int, int)",
+    "template": "package main\n\nfunc divmod(a, b int) (int, int) {\n    // Return quotient and remainder\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [10, 3],
+        "expected": [3, 1],
+        "description": "should return quotient and remainder"
+      },
+      {
+        "input": [20, 4],
+        "expected": [5, 0],
+        "description": "should handle even division"
+      }
+    ],
+    "conceptTags": ["functions-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Conditional Grade Calculator",
+    "description": "Create a function that returns a letter grade based on a numeric score using if/else statements.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-conditional-grade",
+    "functionName": "getGrade",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nfunc getGrade(score int) string {\n    // Return letter grade: A (90+), B (80-89), C (70-79), D (60-69), F (<60)\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [95],
+        "expected": "A",
+        "description": "should return A for 90+"
+      },
+      {
+        "input": [85],
+        "expected": "B",
+        "description": "should return B for 80-89"
+      },
+      {
+        "input": [55],
+        "expected": "F",
+        "description": "should return F for under 60"
+      }
+    ],
+    "conceptTags": ["conditionals-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go For Loop Sum",
+    "description": "Create a function that calculates the sum of numbers from 1 to n using a for loop.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-for-loop-sum",
+    "functionName": "sumToN",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc sumToN(n int) int {\n    // Calculate sum of 1 + 2 + ... + n using for loop\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [5],
+        "expected": 15,
+        "description": "should calculate sum 1+2+3+4+5"
+      },
+      {
+        "input": [10],
+        "expected": 55,
+        "description": "should calculate sum 1+2+...+10"
+      },
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": ["loops-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Array Operations",
+    "description": "Create a function that finds the maximum value in a fixed-size array of 5 integers.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-array-max",
+    "functionName": "findMax",
+    "parameterTypes": ["[5]int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc findMax(arr [5]int) int {\n    // Find and return the maximum value in the array\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 5, 3, 2, 4]],
+        "expected": 5,
+        "description": "should find maximum value"
+      },
+      {
+        "input": [[-1, -5, -3, -2, -4]],
+        "expected": -1,
+        "description": "should handle negative numbers"
+      }
+    ],
+    "conceptTags": ["arrays-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Slice Append",
+    "description": "Create a function that takes a slice of integers and appends only the even numbers to a new slice.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-slice-append-even",
+    "functionName": "getEvenNumbers",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc getEvenNumbers(numbers []int) []int {\n    // Create a new slice with only even numbers\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4, 5, 6]],
+        "expected": [2, 4, 6],
+        "description": "should filter even numbers"
+      },
+      {
+        "input": [[1, 3, 5]],
+        "expected": [],
+        "description": "should return empty slice for all odd"
+      }
+    ],
+    "conceptTags": ["slices-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Map Word Count",
+    "description": "Create a function that counts the frequency of each word in a slice of strings using a map.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-map-word-count",
+    "functionName": "countWords",
+    "parameterTypes": ["[]string"],
+    "returnType": "map[string]int",
+    "template": "package main\n\nfunc countWords(words []string) map[string]int {\n    // Count frequency of each word\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [["hello", "world", "hello", "go"]],
+        "expected": {"hello": 2, "world": 1, "go": 1},
+        "description": "should count word frequencies"
+      },
+      {
+        "input": [["test", "test", "test"]],
+        "expected": {"test": 3},
+        "description": "should handle repeated words"
+      }
+    ],
+    "conceptTags": ["maps-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Struct Person",
+    "description": "Create a Person struct with Name and Age fields, and a function that creates and returns a Person.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-struct-person",
+    "functionName": "createPerson",
+    "parameterTypes": ["string", "int"],
+    "returnType": "Person",
+    "template": "package main\n\ntype Person struct {\n    Name string\n    Age  int\n}\n\nfunc createPerson(name string, age int) Person {\n    // Create and return a Person struct\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Alice", 30],
+        "expected": {"Name": "Alice", "Age": 30},
+        "description": "should create Person struct"
+      },
+      {
+        "input": ["Bob", 25],
+        "expected": {"Name": "Bob", "Age": 25},
+        "description": "should create another Person struct"
+      }
+    ],
+    "conceptTags": ["structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Pointer and Method",
+    "description": "Create a Counter struct with a method to increment its value using pointer receivers.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-pointer-method",
+    "functionName": "newCounter",
+    "parameterTypes": [],
+    "returnType": "*Counter",
+    "template": "package main\n\ntype Counter struct {\n    value int\n}\n\nfunc (c *Counter) Increment() {\n    // Increment the counter value\n}\n\nfunc (c *Counter) Value() int {\n    // Return the current value\n    return c.value\n}\n\nfunc newCounter() *Counter {\n    // Create and return a new Counter\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [],
+        "expected": 0,
+        "description": "should create counter with initial value 0",
+        "testFunction": "func test() int { c := newCounter(); return c.Value() }"
+      }
+    ],
+    "conceptTags": ["pointers-methods-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go String Palindrome",
+    "description": "Create a function that checks if a string is a palindrome (reads the same forwards and backwards).",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-string-palindrome",
+    "functionName": "isPalindrome",
+    "parameterTypes": ["string"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc isPalindrome(s string) bool {\n    // Check if string is a palindrome\n    // Ignore case and spaces\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["racecar"],
+        "expected": true,
+        "description": "should return true for palindrome"
+      },
+      {
+        "input": ["hello"],
+        "expected": false,
+        "description": "should return false for non-palindrome"
+      },
+      {
+        "input": ["A man a plan a canal Panama"],
+        "expected": true,
+        "description": "should ignore spaces and case"
+      }
+    ],
+    "conceptTags": ["strings-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Factorial Recursion",
+    "description": "Calculate the factorial of a number using recursion.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-factorial-recursion",
+    "functionName": "factorial",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc factorial(n int) int {\n    // Calculate factorial using recursion\n    // 5! = 5 * 4 * 3 * 2 * 1 = 120\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [5],
+        "expected": 120,
+        "description": "should calculate 5!"
+      },
+      {
+        "input": [0],
+        "expected": 1,
+        "description": "should handle 0!"
+      },
+      {
+        "input": [1],
+        "expected": 1,
+        "description": "should handle 1!"
+      }
+    ],
+    "conceptTags": ["recursion-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Reverse Slice",
+    "description": "Create a function that reverses a slice of integers in-place.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-reverse-slice",
+    "functionName": "reverseSlice",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc reverseSlice(nums []int) []int {\n    // Reverse the slice in-place\n    // [1,2,3,4] becomes [4,3,2,1]\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": [4, 3, 2, 1],
+        "description": "should reverse slice"
+      },
+      {
+        "input": [[1]],
+        "expected": [1],
+        "description": "should handle single element"
+      },
+      {
+        "input": [[]],
+        "expected": [],
+        "description": "should handle empty slice"
+      }
+    ],
+    "conceptTags": ["slices-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go String Contains",
+    "description": "Implement a function that checks if a string contains a substring without using the strings package.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-string-contains",
+    "functionName": "contains",
+    "parameterTypes": ["string", "string"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc contains(str, substr string) bool {\n    // Check if str contains substr\n    // Don't use strings.Contains()\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["hello world", "world"],
+        "expected": true,
+        "description": "should find substring"
+      },
+      {
+        "input": ["hello", "xyz"],
+        "expected": false,
+        "description": "should return false when not found"
+      },
+      {
+        "input": ["", "test"],
+        "expected": false,
+        "description": "should handle empty string"
+      }
+    ],
+    "conceptTags": ["strings-go", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Prime Number",
+    "description": "Create a function that checks if a number is prime.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-prime-number",
+    "functionName": "isPrime",
+    "parameterTypes": ["int"],
+    "returnType": "bool",
+    "template": "package main\n\nfunc isPrime(n int) bool {\n    // Check if n is a prime number\n    // Prime: only divisible by 1 and itself\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [7],
+        "expected": true,
+        "description": "should return true for prime"
+      },
+      {
+        "input": [4],
+        "expected": false,
+        "description": "should return false for composite"
+      },
+      {
+        "input": [1],
+        "expected": false,
+        "description": "should return false for 1"
+      }
+    ],
+    "conceptTags": ["math", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Fibonacci Iterative",
+    "description": "Calculate the nth Fibonacci number using iteration (not recursion).",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-fibonacci-iterative",
+    "functionName": "fibonacci",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc fibonacci(n int) int {\n    // Calculate nth Fibonacci using iteration\n    // 0, 1, 1, 2, 3, 5, 8, 13...\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should calculate fib(0)"
+      },
+      {
+        "input": [1],
+        "expected": 1,
+        "description": "should calculate fib(1)"
+      },
+      {
+        "input": [6],
+        "expected": 8,
+        "description": "should calculate fib(6)"
+      }
+    ],
+    "conceptTags": ["loops-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Sum Digits",
+    "description": "Create a function that sums all digits in a positive integer.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-sum-digits",
+    "functionName": "sumDigits",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc sumDigits(n int) int {\n    // Sum all digits in the number\n    // 123 -> 1 + 2 + 3 = 6\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [123],
+        "expected": 6,
+        "description": "should sum digits of 123"
+      },
+      {
+        "input": [0],
+        "expected": 0,
+        "description": "should handle zero"
+      },
+      {
+        "input": [999],
+        "expected": 27,
+        "description": "should sum digits of 999"
+      }
+    ],
+    "conceptTags": ["math", "loops-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Find Missing Number",
+    "description": "Find the missing number in a sequence from 1 to n where one number is missing.",
+    "difficulty": "easy",
+    "language": "go",
+    "slug": "go-find-missing-number",
+    "functionName": "findMissing",
+    "parameterTypes": ["[]int"],
+    "returnType": "int",
+    "template": "package main\n\nfunc findMissing(nums []int) int {\n    // Find missing number in sequence 1 to n\n    // [1,2,4,5] missing 3\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 4, 5]],
+        "expected": 3,
+        "description": "should find missing 3"
+      },
+      {
+        "input": [[2, 3, 4, 5]],
+        "expected": 1,
+        "description": "should find missing 1"
+      },
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": 5,
+        "description": "should find missing last number"
+      }
+    ],
+    "conceptTags": ["arrays-go", "math"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Interface Shape Area",
+    "description": "Create a Shape interface with an Area method, and implement it for Rectangle and Circle.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-interface-shape-area",
+    "functionName": "calculateArea",
+    "parameterTypes": ["string", "float64", "float64"],
+    "returnType": "float64",
+    "template": "package main\n\nimport \"math\"\n\ntype Shape interface {\n    Area() float64\n}\n\ntype Rectangle struct {\n    width, height float64\n}\n\ntype Circle struct {\n    radius float64\n}\n\n// Implement Area methods\n\nfunc calculateArea(shapeType string, param1, param2 float64) float64 {\n    // Create shape and return its area\n    // \"rectangle\": param1=width, param2=height\n    // \"circle\": param1=radius, param2=ignored\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["rectangle", 5.0, 3.0],
+        "expected": 15.0,
+        "description": "should calculate rectangle area"
+      },
+      {
+        "input": ["circle", 2.0, 0.0],
+        "expected": 12.566370614359172,
+        "description": "should calculate circle area"
+      }
+    ],
+    "conceptTags": ["interfaces-go", "structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Custom Error Handling",
+    "description": "Create a custom error type and a function that validates age with custom error messages.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-custom-error-handling",
+    "functionName": "validateAge",
+    "parameterTypes": ["int"],
+    "returnType": "error",
+    "template": "package main\n\nimport \"fmt\"\n\ntype AgeError struct {\n    Age int\n    Msg string\n}\n\nfunc (e *AgeError) Error() string {\n    return fmt.Sprintf(\"Age %d: %s\", e.Age, e.Msg)\n}\n\nfunc validateAge(age int) error {\n    // Return custom error if age < 0 or age > 150\n    // Return nil if valid\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [25],
+        "expected": null,
+        "description": "should return nil for valid age"
+      },
+      {
+        "input": [-5],
+        "expected": "Age -5: invalid age",
+        "description": "should return error for negative age"
+      },
+      {
+        "input": [200],
+        "expected": "Age 200: invalid age",
+        "description": "should return error for age > 150"
+      }
+    ],
+    "conceptTags": ["errors-go", "interfaces-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go JSON Marshal Unmarshal",
+    "description": "Create a function that converts a Person struct to JSON and back.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-json-marshal-unmarshal",
+    "functionName": "jsonRoundTrip",
+    "parameterTypes": ["string", "int"],
+    "returnType": "string",
+    "template": "package main\n\nimport \"encoding/json\"\n\ntype Person struct {\n    Name string `json:\"name\"`\n    Age  int    `json:\"age\"`\n}\n\nfunc jsonRoundTrip(name string, age int) string {\n    // Create Person, marshal to JSON, then return JSON string\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Alice", 30],
+        "expected": "{\"name\":\"Alice\",\"age\":30}",
+        "description": "should marshal Person to JSON"
+      },
+      {
+        "input": ["Bob", 25],
+        "expected": "{\"name\":\"Bob\",\"age\":25}",
+        "description": "should marshal another Person to JSON"
+      }
+    ],
+    "conceptTags": ["json-go", "structs-go"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Goroutine Counter",
+    "description": "Use goroutines to count numbers concurrently and return the sum.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-goroutine-counter",
+    "functionName": "concurrentSum",
+    "parameterTypes": ["int"],
+    "returnType": "int",
+    "template": "package main\n\nimport \"sync\"\n\nfunc concurrentSum(n int) int {\n    // Use goroutines to sum numbers 1 to n\n    // Split work between multiple goroutines\n    var wg sync.WaitGroup\n    var mu sync.Mutex\n    sum := 0\n    \n    // Implement concurrent sum\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [10],
+        "expected": 55,
+        "description": "should sum 1 to 10 concurrently"
+      },
+      {
+        "input": [5],
+        "expected": 15,
+        "description": "should sum 1 to 5 concurrently"
+      }
+    ],
+    "conceptTags": ["goroutines-go", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Channel Producer Consumer",
+    "description": "Implement a producer-consumer pattern using channels.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-channel-producer-consumer",
+    "functionName": "processNumbers",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc processNumbers(nums []int) []int {\n    // Use channels for producer-consumer pattern\n    // Producer sends numbers, consumer doubles them\n    input := make(chan int)\n    output := make(chan int)\n    \n    // Implement producer-consumer\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": [2, 4, 6, 8],
+        "description": "should double all numbers using channels"
+      },
+      {
+        "input": [[5, 10]],
+        "expected": [10, 20],
+        "description": "should double numbers using channels"
+      }
+    ],
+    "conceptTags": ["channels-go", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Binary Search Tree",
+    "description": "Implement a binary search tree with insert and search operations.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-binary-search-tree",
+    "functionName": "createBST",
+    "parameterTypes": ["[]int"],
+    "returnType": "bool",
+    "template": "package main\n\ntype TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\ntype BST struct {\n    Root *TreeNode\n}\n\nfunc (bst *BST) Insert(val int) {\n    // Insert value into BST\n}\n\nfunc (bst *BST) Search(val int) bool {\n    // Search for value in BST\n}\n\nfunc createBST(values []int) bool {\n    // Create BST, insert all values, then search for first value\n    bst := &BST{}\n    for _, v := range values {\n        bst.Insert(v)\n    }\n    if len(values) > 0 {\n        return bst.Search(values[0])\n    }\n    return false\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[5, 3, 7, 1, 9]],
+        "expected": true,
+        "description": "should find first inserted value"
+      },
+      {
+        "input": [[10, 5, 15]],
+        "expected": true,
+        "description": "should find root value"
+      }
+    ],
+    "conceptTags": ["data-structures", "trees"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Bubble Sort",
+    "description": "Implement the bubble sort algorithm to sort a slice of integers.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-bubble-sort",
+    "functionName": "bubbleSort",
+    "parameterTypes": ["[]int"],
+    "returnType": "[]int",
+    "template": "package main\n\nfunc bubbleSort(nums []int) []int {\n    // Implement bubble sort algorithm\n    // Sort in ascending order\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[64, 34, 25, 12, 22, 11, 90]],
+        "expected": [11, 12, 22, 25, 34, 64, 90],
+        "description": "should sort array using bubble sort"
+      },
+      {
+        "input": [[3, 1, 4, 1, 5]],
+        "expected": [1, 1, 3, 4, 5],
+        "description": "should handle duplicates"
+      }
+    ],
+    "conceptTags": ["sorting", "algorithms"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Linked List",
+    "description": "Implement a basic linked list with append and find operations.",
+    "difficulty": "medium",
+    "language": "go",
+    "slug": "go-linked-list",
+    "functionName": "createLinkedList",
+    "parameterTypes": ["[]int"],
+    "returnType": "bool",
+    "template": "package main\n\ntype ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\ntype LinkedList struct {\n    Head *ListNode\n}\n\nfunc (ll *LinkedList) Append(val int) {\n    // Append value to end of list\n}\n\nfunc (ll *LinkedList) Find(val int) bool {\n    // Find value in list\n}\n\nfunc createLinkedList(values []int) bool {\n    // Create list, append all values, find first value\n    ll := &LinkedList{}\n    for _, v := range values {\n        ll.Append(v)\n    }\n    if len(values) > 0 {\n        return ll.Find(values[0])\n    }\n    return false\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4]],
+        "expected": true,
+        "description": "should find first value in list"
+      },
+      {
+        "input": [[10, 20, 30]],
+        "expected": true,
+        "description": "should find value in list"
+      }
+    ],
+    "conceptTags": ["data-structures", "linked-lists"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Worker Pool",
+    "description": "Implement a worker pool pattern with goroutines and channels to process jobs concurrently.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-worker-pool",
+    "functionName": "processJobs",
+    "parameterTypes": ["[]int", "int"],
+    "returnType": "[]int",
+    "template": "package main\n\nimport \"sync\"\n\nfunc processJobs(jobs []int, numWorkers int) []int {\n    // Implement worker pool to square each number\n    // Use numWorkers goroutines\n    jobChan := make(chan int, len(jobs))\n    resultChan := make(chan int, len(jobs))\n    var wg sync.WaitGroup\n    \n    // Implement worker pool pattern\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], 2],
+        "expected": [1, 4, 9, 16],
+        "description": "should square numbers using worker pool"
+      },
+      {
+        "input": [[5, 6], 1],
+        "expected": [25, 36],
+        "description": "should work with single worker"
+      }
+    ],
+    "conceptTags": ["concurrency", "worker-pool", "channels-go"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Context Timeout",
+    "description": "Use context to implement operation timeouts for a long-running function.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-context-timeout",
+    "functionName": "operationWithTimeout",
+    "parameterTypes": ["int"],
+    "returnType": "string",
+    "template": "package main\n\nimport (\n    \"context\"\n    \"time\"\n)\n\nfunc operationWithTimeout(seconds int) string {\n    // Create context with timeout\n    // If operation takes longer than 2 seconds, return \"timeout\"\n    // Otherwise return \"completed\"\n    ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)\n    defer cancel()\n    \n    // Simulate work that takes 'seconds' seconds\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [1],
+        "expected": "completed",
+        "description": "should complete within timeout"
+      },
+      {
+        "input": [3],
+        "expected": "timeout",
+        "description": "should timeout for long operation"
+      }
+    ],
+    "conceptTags": ["context-go", "timeout"],
+    "timeLimit": 15000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go HTTP JSON API",
+    "description": "Create a simple HTTP server that responds with JSON data.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-http-json-api",
+    "functionName": "createServer",
+    "parameterTypes": ["string"],
+    "returnType": "string",
+    "template": "package main\n\nimport (\n    \"encoding/json\"\n    \"fmt\"\n    \"net/http\"\n)\n\ntype Response struct {\n    Message string `json:\"message\"`\n    Status  string `json:\"status\"`\n}\n\nfunc createServer(message string) string {\n    // Create HTTP handler that returns JSON response\n    // Return the JSON string that would be sent\n    response := Response{\n        Message: message,\n        Status:  \"success\",\n    }\n    \n    // Marshal to JSON and return\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": ["Hello World"],
+        "expected": "{\"message\":\"Hello World\",\"status\":\"success\"}",
+        "description": "should create JSON response"
+      },
+      {
+        "input": ["API Test"],
+        "expected": "{\"message\":\"API Test\",\"status\":\"success\"}",
+        "description": "should create JSON response with different message"
+      }
+    ],
+    "conceptTags": ["http-go", "json-go", "web"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Go Concurrent Web Scraper",
+    "description": "Fetch multiple URLs concurrently and return their status codes.",
+    "difficulty": "hard",
+    "language": "go",
+    "slug": "go-concurrent-web-scraper",
+    "functionName": "fetchURLs",
+    "parameterTypes": ["[]string"],
+    "returnType": "[]int",
+    "template": "package main\n\nimport (\n    \"net/http\"\n    \"sync\"\n)\n\nfunc fetchURLs(urls []string) []int {\n    // Fetch all URLs concurrently\n    // Return slice of status codes in same order\n    // Use goroutines and channels\n    \n    // For testing, simulate responses:\n    // \"http://example.com\" -> 200\n    // \"http://invalid.xyz\" -> 404\n    // any other -> 500\n}\n\nfunc main() {\n    \n}",
+    "testCases": [
+      {
+        "input": [["http://example.com", "http://invalid.xyz"]],
+        "expected": [200, 404],
+        "description": "should return status codes for URLs"
+      },
+      {
+        "input": [["http://example.com"]],
+        "expected": [200],
+        "description": "should handle single URL"
+      }
+    ],
+    "conceptTags": ["http-go", "concurrency", "web-scraping"],
+    "timeLimit": 15000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Variables and Types",
+    "description": "Create a function that demonstrates Python's basic data types and returns a formatted string.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-variables-types",
+    "functionName": "demonstrate_types",
+    "parameterTypes": [],
+    "returnType": "str",
+    "template": "def demonstrate_types():\n    # Create variables of different types\n    # Return formatted string: \"int: 42, float: 3.14, bool: True, str: hello\"\n    pass",
+    "testCases": [
+      {
+        "input": [],
+        "expected": "int: 42, float: 3.14, bool: True, str: hello",
+        "description": "should demonstrate basic Python types"
+      }
+    ],
+    "conceptTags": ["variables", "types"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python List Operations",
+    "description": "Create a function that performs basic list operations and returns the sum of all elements.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-list-operations",
+    "functionName": "list_sum",
+    "parameterTypes": ["list"],
+    "returnType": "int",
+    "template": "def list_sum(numbers):\n    # Calculate the sum of all numbers in the list\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4, 5]],
+        "expected": 15,
+        "description": "should sum all numbers in list"
+      },
+      {
+        "input": [[-1, 0, 1]],
+        "expected": 0,
+        "description": "should handle negative numbers"
+      },
+      {
+        "input": [[]],
+        "expected": 0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["lists", "iteration"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Dictionary Operations",
+    "description": "Create a function that counts the frequency of each character in a string using a dictionary.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-dict-char-count",
+    "functionName": "count_characters",
+    "parameterTypes": ["str"],
+    "returnType": "dict",
+    "template": "def count_characters(text):\n    # Count frequency of each character in the string\n    # Return dictionary with character as key and count as value\n    pass",
+    "testCases": [
+      {
+        "input": ["hello"],
+        "expected": {"h": 1, "e": 1, "l": 2, "o": 1},
+        "description": "should count character frequencies"
+      },
+      {
+        "input": ["aaa"],
+        "expected": {"a": 3},
+        "description": "should handle repeated characters"
+      },
+      {
+        "input": [""],
+        "expected": {},
+        "description": "should handle empty string"
+      }
+    ],
+    "conceptTags": ["dictionaries", "strings"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python List Comprehension",
+    "description": "Use list comprehension to create a list of squares of even numbers from 1 to n.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-list-comprehension",
+    "functionName": "even_squares",
+    "parameterTypes": ["int"],
+    "returnType": "list",
+    "template": "def even_squares(n):\n    # Return list of squares of even numbers from 1 to n\n    # Use list comprehension\n    pass",
+    "testCases": [
+      {
+        "input": [10],
+        "expected": [4, 16, 36, 64, 100],
+        "description": "should return squares of even numbers 1-10"
+      },
+      {
+        "input": [5],
+        "expected": [4, 16],
+        "description": "should return squares of even numbers 1-5"
+      },
+      {
+        "input": [1],
+        "expected": [],
+        "description": "should handle small range"
+      }
+    ],
+    "conceptTags": ["list-comprehension", "loops"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Function with Default Arguments",
+    "description": "Create a function that calculates the area of a rectangle with optional height parameter.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-default-args",
+    "functionName": "rectangle_area",
+    "parameterTypes": ["float", "float"],
+    "returnType": "float",
+    "template": "def rectangle_area(width, height=1.0):\n    # Calculate area of rectangle\n    # height defaults to 1.0 if not provided\n    pass",
+    "testCases": [
+      {
+        "input": [5.0, 3.0],
+        "expected": 15.0,
+        "description": "should calculate area with both parameters"
+      },
+      {
+        "input": [4.0],
+        "expected": 4.0,
+        "description": "should use default height"
+      },
+      {
+        "input": [2.5, 2.0],
+        "expected": 5.0,
+        "description": "should handle decimal values"
+      }
+    ],
+    "conceptTags": ["functions", "default-parameters"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python String Methods",
+    "description": "Create a function that formats a name properly using string methods.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-string-methods",
+    "functionName": "format_name",
+    "parameterTypes": ["str"],
+    "returnType": "str",
+    "template": "def format_name(name):\n    # Format name to proper case (first letter uppercase, rest lowercase)\n    # Remove leading/trailing whitespace\n    pass",
+    "testCases": [
+      {
+        "input": ["  john doe  "],
+        "expected": "John Doe",
+        "description": "should format name properly"
+      },
+      {
+        "input": ["ALICE SMITH"],
+        "expected": "Alice Smith",
+        "description": "should handle uppercase"
+      },
+      {
+        "input": ["bob"],
+        "expected": "Bob",
+        "description": "should handle single name"
+      }
+    ],
+    "conceptTags": ["strings", "methods"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Lambda and Filter",
+    "description": "Use lambda functions and filter to find all palindromes in a list of strings.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-lambda-filter",
+    "functionName": "find_palindromes",
+    "parameterTypes": ["list"],
+    "returnType": "list",
+    "template": "def find_palindromes(words):\n    # Find all palindromes in the list using lambda and filter\n    # A palindrome reads the same forwards and backwards\n    pass",
+    "testCases": [
+      {
+        "input": [["racecar", "hello", "level", "world", "madam"]],
+        "expected": ["racecar", "level", "madam"],
+        "description": "should find palindromes"
+      },
+      {
+        "input": [["python", "java", "go"]],
+        "expected": [],
+        "description": "should return empty list if no palindromes"
+      },
+      {
+        "input": [["a", "aa", "aba"]],
+        "expected": ["a", "aa", "aba"],
+        "description": "should handle single and double character palindromes"
+      }
+    ],
+    "conceptTags": ["lambda", "filter", "strings"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Class and Methods",
+    "description": "Create a BankAccount class with deposit, withdraw, and get_balance methods.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-class-methods",
+    "functionName": "create_account",
+    "parameterTypes": ["float"],
+    "returnType": "float",
+    "template": "class BankAccount:\n    def __init__(self, initial_balance=0.0):\n        # Initialize account with initial balance\n        pass\n    \n    def deposit(self, amount):\n        # Add amount to balance\n        pass\n    \n    def withdraw(self, amount):\n        # Subtract amount from balance (don't allow negative balance)\n        pass\n    \n    def get_balance(self):\n        # Return current balance\n        pass\n\ndef create_account(initial_balance):\n    # Create account, deposit 100, withdraw 30, return final balance\n    account = BankAccount(initial_balance)\n    account.deposit(100)\n    account.withdraw(30)\n    return account.get_balance()",
+    "testCases": [
+      {
+        "input": [50.0],
+        "expected": 120.0,
+        "description": "should handle deposit and withdrawal"
+      },
+      {
+        "input": [0.0],
+        "expected": 70.0,
+        "description": "should handle zero initial balance"
+      },
+      {
+        "input": [25.5],
+        "expected": 95.5,
+        "description": "should handle decimal amounts"
+      }
+    ],
+    "conceptTags": ["classes", "methods", "oop"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Exception Handling",
+    "description": "Create a function that safely divides two numbers and handles division by zero.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-exception-handling",
+    "functionName": "safe_divide",
+    "parameterTypes": ["float", "float"],
+    "returnType": "str",
+    "template": "def safe_divide(a, b):\n    # Safely divide a by b\n    # Return \"Error: Division by zero\" if b is 0\n    # Return the result as a string otherwise\n    pass",
+    "testCases": [
+      {
+        "input": [10.0, 2.0],
+        "expected": "5.0",
+        "description": "should divide normally"
+      },
+      {
+        "input": [5.0, 0.0],
+        "expected": "Error: Division by zero",
+        "description": "should handle division by zero"
+      },
+      {
+        "input": [7.0, 3.0],
+        "expected": "2.3333333333333335",
+        "description": "should handle decimal results"
+      }
+    ],
+    "conceptTags": ["exceptions", "error-handling"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python File I/O Simulation",
+    "description": "Simulate file operations by processing a list of lines and counting words.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-file-io",
+    "functionName": "count_words_in_lines",
+    "parameterTypes": ["list"],
+    "returnType": "int",
+    "template": "def count_words_in_lines(lines):\n    # Count total number of words in all lines\n    # Words are separated by spaces\n    pass",
+    "testCases": [
+      {
+        "input": [["Hello world", "Python is great", "Coding is fun"]],
+        "expected": 7,
+        "description": "should count words in multiple lines"
+      },
+      {
+        "input": [["", "  ", "one word"]],
+        "expected": 2,
+        "description": "should handle empty and whitespace lines"
+      },
+      {
+        "input": [[]],
+        "expected": 0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["file-io", "strings", "loops"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Decorator",
+    "description": "Create a decorator that times the execution of a function.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-decorator",
+    "functionName": "timed_function",
+    "parameterTypes": ["int"],
+    "returnType": "str",
+    "template": "import time\n\ndef timer_decorator(func):\n    # Decorator that times function execution\n    def wrapper(*args, **kwargs):\n        # Time the function execution and return \"Executed in X seconds\"\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        execution_time = end_time - start_time\n        return f\"Executed in {execution_time:.6f} seconds\"\n    return wrapper\n\n@timer_decorator\ndef slow_function(n):\n    # Simulate work by sleeping for n/1000 seconds\n    time.sleep(n / 1000)\n    return \"Done\"\n\ndef timed_function(milliseconds):\n    # Call the decorated function\n    return slow_function(milliseconds)",
+    "testCases": [
+      {
+        "input": [100],
+        "expected": "Executed in 0.100000 seconds",
+        "description": "should time function execution",
+        "testFunction": "import re\ndef test_result(result):\n    # Check if result matches pattern\n    pattern = r'Executed in \\d+\\.\\d{6} seconds'\n    return bool(re.match(pattern, result))"
+      }
+    ],
+    "conceptTags": ["decorators", "functions", "time"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Generator",
+    "description": "Create a generator that yields Fibonacci numbers up to n.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-generator",
+    "functionName": "fibonacci_generator",
+    "parameterTypes": ["int"],
+    "returnType": "list",
+    "template": "def fibonacci_up_to(n):\n    # Generator that yields Fibonacci numbers up to n\n    a, b = 0, 1\n    while a <= n:\n        yield a\n        a, b = b, a + b\n\ndef fibonacci_generator(n):\n    # Return list of Fibonacci numbers up to n\n    return list(fibonacci_up_to(n))",
+    "testCases": [
+      {
+        "input": [20],
+        "expected": [0, 1, 1, 2, 3, 5, 8, 13],
+        "description": "should generate Fibonacci numbers up to 20"
+      },
+      {
+        "input": [1],
+        "expected": [0, 1, 1],
+        "description": "should handle small values"
+      },
+      {
+        "input": [0],
+        "expected": [0],
+        "description": "should handle zero"
+      }
+    ],
+    "conceptTags": ["generators", "fibonacci", "iteration"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Set Operations",
+    "description": "Find common elements between two lists using set operations.",
+    "difficulty": "easy",
+    "language": "python",
+    "slug": "python-set-operations",
+    "functionName": "find_common_elements",
+    "parameterTypes": ["list", "list"],
+    "returnType": "list",
+    "template": "def find_common_elements(list1, list2):\n    # Find common elements between two lists using sets\n    # Return sorted list of common elements\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], [3, 4, 5, 6]],
+        "expected": [3, 4],
+        "description": "should find common elements"
+      },
+      {
+        "input": [["a", "b", "c"], ["c", "d", "e"]],
+        "expected": ["c"],
+        "description": "should work with strings"
+      },
+      {
+        "input": [[1, 2, 3], [4, 5, 6]],
+        "expected": [],
+        "description": "should return empty list when no common elements"
+      }
+    ],
+    "conceptTags": ["sets", "lists", "operations"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Regular Expressions",
+    "description": "Use regex to extract all email addresses from a text string.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-regex",
+    "functionName": "extract_emails",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import re\n\ndef extract_emails(text):\n    # Extract all email addresses from text using regex\n    # Return list of email addresses\n    pass",
+    "testCases": [
+      {
+        "input": ["Contact us at info@example.com or support@test.org"],
+        "expected": ["info@example.com", "support@test.org"],
+        "description": "should extract multiple email addresses"
+      },
+      {
+        "input": ["My email is john.doe@company.net"],
+        "expected": ["john.doe@company.net"],
+        "description": "should handle dots in email"
+      },
+      {
+        "input": ["No emails here!"],
+        "expected": [],
+        "description": "should return empty list when no emails"
+      }
+    ],
+    "conceptTags": ["regex", "strings", "pattern-matching"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python JSON Processing",
+    "description": "Parse JSON data and extract specific information.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-json",
+    "functionName": "extract_names",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import json\n\ndef extract_names(json_string):\n    # Parse JSON string and extract all 'name' fields\n    # Return list of names\n    pass",
+    "testCases": [
+      {
+        "input": ["{\"users\": [{\"name\": \"Alice\", \"age\": 30}, {\"name\": \"Bob\", \"age\": 25}]}"],
+        "expected": ["Alice", "Bob"],
+        "description": "should extract names from JSON"
+      },
+      {
+        "input": ["{\"person\": {\"name\": \"Charlie\", \"city\": \"NYC\"}}"],
+        "expected": ["Charlie"],
+        "description": "should handle single object"
+      },
+      {
+        "input": ["{\"data\": []}"],
+        "expected": [],
+        "description": "should handle empty data"
+      }
+    ],
+    "conceptTags": ["json", "parsing", "data-processing"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Sorting and Lambda",
+    "description": "Sort a list of dictionaries by a specific key using lambda.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-sorting-lambda",
+    "functionName": "sort_by_age",
+    "parameterTypes": ["list"],
+    "returnType": "list",
+    "template": "def sort_by_age(people):\n    # Sort list of dictionaries by 'age' key using lambda\n    # Return sorted list\n    pass",
+    "testCases": [
+      {
+        "input": [[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}, {"name": "Charlie", "age": 35}]],
+        "expected": [{"name": "Bob", "age": 25}, {"name": "Alice", "age": 30}, {"name": "Charlie", "age": 35}],
+        "description": "should sort by age"
+      },
+      {
+        "input": [[{"name": "John", "age": 40}]],
+        "expected": [{"name": "John", "age": 40}],
+        "description": "should handle single item"
+      },
+      {
+        "input": [[]],
+        "expected": [],
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["sorting", "lambda", "dictionaries"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Inheritance",
+    "description": "Create a class hierarchy with inheritance and method overriding.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-inheritance",
+    "functionName": "create_animals",
+    "parameterTypes": [],
+    "returnType": "list",
+    "template": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    \n    def speak(self):\n        return f\"{self.name} makes a sound\"\n\nclass Dog(Animal):\n    def speak(self):\n        return f\"{self.name} barks\"\n\nclass Cat(Animal):\n    def speak(self):\n        return f\"{self.name} meows\"\n\ndef create_animals():\n    # Create a Dog named \"Buddy\" and a Cat named \"Whiskers\"\n    # Return list of their speak() method results\n    pass",
+    "testCases": [
+      {
+        "input": [],
+        "expected": ["Buddy barks", "Whiskers meows"],
+        "description": "should demonstrate inheritance and method overriding"
+      }
+    ],
+    "conceptTags": ["inheritance", "classes", "oop"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Context Manager",
+    "description": "Create a simple context manager for resource management.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-context-manager",
+    "functionName": "use_resource",
+    "parameterTypes": ["str"],
+    "returnType": "str",
+    "template": "class ResourceManager:\n    def __init__(self, resource_name):\n        self.resource_name = resource_name\n        self.resource = None\n    \n    def __enter__(self):\n        self.resource = f\"Acquired {self.resource_name}\"\n        return self.resource\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        self.resource = None\n        return False\n\ndef use_resource(resource_name):\n    # Use the ResourceManager context manager\n    # Return the resource that was acquired\n    pass",
+    "testCases": [
+      {
+        "input": ["Database"],
+        "expected": "Acquired Database",
+        "description": "should use context manager"
+      },
+      {
+        "input": ["File Handle"],
+        "expected": "Acquired File Handle",
+        "description": "should work with different resource names"
+      }
+    ],
+    "conceptTags": ["context-managers", "resource-management", "with-statement"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Asyncio Basics",
+    "description": "Create a simple asynchronous function using async/await.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-asyncio",
+    "functionName": "async_operation",
+    "parameterTypes": ["int"],
+    "returnType": "str",
+    "template": "import asyncio\n\nasync def async_task(delay):\n    # Simulate async work by sleeping for delay milliseconds\n    await asyncio.sleep(delay / 1000)\n    return f\"Task completed after {delay}ms\"\n\ndef async_operation(delay):\n    # Run the async task and return result\n    return asyncio.run(async_task(delay))",
+    "testCases": [
+      {
+        "input": [100],
+        "expected": "Task completed after 100ms",
+        "description": "should run async task"
+      },
+      {
+        "input": [50],
+        "expected": "Task completed after 50ms",
+        "description": "should handle different delays"
+      }
+    ],
+    "conceptTags": ["asyncio", "async-await", "concurrency"],
+    "timeLimit": 10000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Type Hints",
+    "description": "Create a function with proper type hints for parameters and return value.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-type-hints",
+    "functionName": "calculate_average",
+    "parameterTypes": ["list"],
+    "returnType": "float",
+    "template": "from typing import List\n\ndef calculate_average(numbers: List[float]) -> float:\n    # Calculate average of numbers with proper type hints\n    # Return 0.0 if list is empty\n    pass",
+    "testCases": [
+      {
+        "input": [[1.0, 2.0, 3.0, 4.0]],
+        "expected": 2.5,
+        "description": "should calculate average"
+      },
+      {
+        "input": [[10.0]],
+        "expected": 10.0,
+        "description": "should handle single number"
+      },
+      {
+        "input": [[]],
+        "expected": 0.0,
+        "description": "should handle empty list"
+      }
+    ],
+    "conceptTags": ["type-hints", "typing", "functions"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Data Classes",
+    "description": "Use dataclasses to create a simple data structure.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-dataclasses",
+    "functionName": "create_person",
+    "parameterTypes": ["str", "int", "str"],
+    "returnType": "str",
+    "template": "from dataclasses import dataclass\n\n@dataclass\nclass Person:\n    name: str\n    age: int\n    email: str\n    \n    def introduce(self) -> str:\n        return f\"Hi, I'm {self.name}, {self.age} years old. Email: {self.email}\"\n\ndef create_person(name, age, email):\n    # Create a Person instance and return their introduction\n    pass",
+    "testCases": [
+      {
+        "input": ["Alice", 30, "alice@example.com"],
+        "expected": "Hi, I'm Alice, 30 years old. Email: alice@example.com",
+        "description": "should create person and return introduction"
+      },
+      {
+        "input": ["Bob", 25, "bob@test.org"],
+        "expected": "Hi, I'm Bob, 25 years old. Email: bob@test.org",
+        "description": "should work with different data"
+      }
+    ],
+    "conceptTags": ["dataclasses", "classes", "type-hints"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Itertools",
+    "description": "Use itertools to solve a combination problem.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-itertools",
+    "functionName": "find_combinations",
+    "parameterTypes": ["list", "int"],
+    "returnType": "list",
+    "template": "from itertools import combinations\n\ndef find_combinations(items, r):\n    # Find all combinations of r items from the list\n    # Return list of tuples\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 2, 3, 4], 2],
+        "expected": [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]],
+        "description": "should find all 2-combinations"
+      },
+      {
+        "input": [["a", "b", "c"], 3],
+        "expected": [["a", "b", "c"]],
+        "description": "should handle full combinations"
+      },
+      {
+        "input": [[1, 2], 1],
+        "expected": [[1], [2]],
+        "description": "should handle single item combinations"
+      }
+    ],
+    "conceptTags": ["itertools", "combinations", "functional-programming"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Algorithm - Binary Search",
+    "description": "Implement binary search algorithm in Python.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-binary-search",
+    "functionName": "binary_search",
+    "parameterTypes": ["list", "int"],
+    "returnType": "int",
+    "template": "def binary_search(arr, target):\n    # Implement binary search algorithm\n    # Return index of target if found, -1 otherwise\n    # Assume arr is sorted in ascending order\n    pass",
+    "testCases": [
+      {
+        "input": [[1, 3, 5, 7, 9, 11], 7],
+        "expected": 3,
+        "description": "should find target in sorted array"
+      },
+      {
+        "input": [[1, 2, 3, 4, 5], 6],
+        "expected": -1,
+        "description": "should return -1 when target not found"
+      },
+      {
+        "input": [[10], 10],
+        "expected": 0,
+        "description": "should handle single element array"
+      }
+    ],
+    "conceptTags": ["algorithms", "binary-search", "searching"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Web Scraping Simulation",
+    "description": "Simulate web scraping by parsing HTML-like strings.",
+    "difficulty": "hard",
+    "language": "python",
+    "slug": "python-web-scraping",
+    "functionName": "extract_links",
+    "parameterTypes": ["str"],
+    "returnType": "list",
+    "template": "import re\n\ndef extract_links(html_content):\n    # Extract all href attributes from anchor tags\n    # Return list of URLs\n    # Example: <a href=\"https://example.com\">Link</a>\n    pass",
+    "testCases": [
+      {
+        "input": ["<a href=\"https://example.com\">Example</a> and <a href=\"https://test.org\">Test</a>"],
+        "expected": ["https://example.com", "https://test.org"],
+        "description": "should extract multiple links"
+      },
+      {
+        "input": ["<p>No links here</p>"],
+        "expected": [],
+        "description": "should return empty list when no links"
+      },
+      {
+        "input": ["<a href=\"/local/path\">Local</a>"],
+        "expected": ["/local/path"],
+        "description": "should handle relative links"
+      }
+    ],
+    "conceptTags": ["web-scraping", "regex", "html-parsing"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  },
+  {
+    "title": "Python Data Analysis",
+    "description": "Perform basic data analysis on a list of dictionaries.",
+    "difficulty": "medium",
+    "language": "python",
+    "slug": "python-data-analysis",
+    "functionName": "analyze_sales",
+    "parameterTypes": ["list"],
+    "returnType": "dict",
+    "template": "def analyze_sales(sales_data):\n    # Analyze sales data and return summary statistics\n    # sales_data: list of dicts with 'product', 'quantity', 'price'\n    # Return dict with 'total_revenue', 'average_price', 'top_product'\n    pass",
+    "testCases": [
+      {
+        "input": [[{"product": "A", "quantity": 10, "price": 5.0}, {"product": "B", "quantity": 5, "price": 10.0}, {"product": "A", "quantity": 3, "price": 5.0}]],
+        "expected": {"total_revenue": 115.0, "average_price": 6.67, "top_product": "A"},
+        "description": "should analyze sales data"
+      },
+      {
+        "input": [[{"product": "X", "quantity": 2, "price": 25.0}]],
+        "expected": {"total_revenue": 50.0, "average_price": 25.0, "top_product": "X"},
+        "description": "should handle single item"
+      }
+    ],
+    "conceptTags": ["data-analysis", "dictionaries", "aggregation"],
+    "timeLimit": 5000,
+    "memoryLimit": 128
+  }
+]
