@@ -1,6 +1,6 @@
 # CodeQuest CLI
 
-A command-line tool for practicing coding challenges locally. Write solutions in Go, JavaScript, TypeScript, or Python and test them against the same test cases used in the online platform.
+A command-line tool for practicing coding challenges locally. Write solutions in Go, JavaScript, TypeScript, or Python and test them against the same test cases used in the online platform [CodeQuest](https://quest.cristianecheverria.com).
 
 ## Features
 
