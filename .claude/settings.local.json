@@ -11,10 +11,7 @@
       "Bash(./codequest list)",
       "Bash(./codequest list:*)",
       "Bash(./codequest fetch python-variables-types)",
-      "Bash(./codequest fetch python-list-comprehension)",
-      "Bash(cp:*)",
-      "Bash(../codequest list -l python)",
-      "Bash(../codequest fetch python-variables-types)"
+      "Bash(./codequest fetch python-list-comprehension)"
     ],
     "deny": []
   }

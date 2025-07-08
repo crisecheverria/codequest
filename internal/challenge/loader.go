@@ -8,16 +8,7 @@ import (
 )
 
 func LoadChallenges() ([]Challenge, error) {
-	// First try to use embedded data
-	if len(embeddedChallenges) > 0 {
-		var challenges []Challenge
-		if err := json.Unmarshal(embeddedChallenges, &challenges); err != nil {
-			return nil, fmt.Errorf("failed to parse embedded challenges JSON: %w", err)
-		}
-		return challenges, nil
-	}
-
-	// Fallback to external file for development
+	// Try different potential paths for the challenges.json file
 	possiblePaths := []string{
 		"data/challenges.json",                  // From binary location (standalone)
 		"../data/challenges.json",              // From challenge directory
