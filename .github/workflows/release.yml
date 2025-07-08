@@ -22,12 +22,15 @@ jobs:
     
     - name: Build binaries
       run: |
+        VERSION="${{ steps.version.outputs.VERSION }}"
+        LDFLAGS="-X 'github.com/crisecheverria/codequest/cmd.Version=$VERSION'"
+        
         # Build for different platforms
-        GOOS=linux GOARCH=amd64 go build -o codequest-linux-amd64 main.go
-        GOOS=linux GOARCH=arm64 go build -o codequest-linux-arm64 main.go
-        GOOS=darwin GOARCH=amd64 go build -o codequest-darwin-amd64 main.go
-        GOOS=darwin GOARCH=arm64 go build -o codequest-darwin-arm64 main.go
-        GOOS=windows GOARCH=amd64 go build -o codequest-windows-amd64.exe main.go
+        GOOS=linux GOARCH=amd64 go build -ldflags="$LDFLAGS" -o codequest-linux-amd64 main.go
+        GOOS=linux GOARCH=arm64 go build -ldflags="$LDFLAGS" -o codequest-linux-arm64 main.go
+        GOOS=darwin GOARCH=amd64 go build -ldflags="$LDFLAGS" -o codequest-darwin-amd64 main.go
+        GOOS=darwin GOARCH=arm64 go build -ldflags="$LDFLAGS" -o codequest-darwin-arm64 main.go
+        GOOS=windows GOARCH=amd64 go build -ldflags="$LDFLAGS" -o codequest-windows-amd64.exe main.go
         
         # Create checksums
         sha256sum codequest-* > checksums.txt

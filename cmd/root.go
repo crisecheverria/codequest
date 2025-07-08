@@ -6,9 +6,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// Version will be set during build time via ldflags
+var Version = "dev"
+
 var rootCmd = &cobra.Command{
 	Use:     "codequest",
-	Version: "v1.0.0",
+	Version: Version,
 	Short:   "CodeQuest CLI - Interactive coding challenges in your terminal",
 	Long: `CodeQuest CLI allows you to fetch, solve, and submit coding challenges 
 directly from your terminal with native language execution.
