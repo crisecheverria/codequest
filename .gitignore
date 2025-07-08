@@ -43,3 +43,6 @@ challenge-*/
 
 # Go module download cache
 go.sum.backup
+
+# Embedded data copies
+internal/challenge/challenges.json
