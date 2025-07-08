@@ -1,11 +1,11 @@
 # CodeQuest CLI
 
-A command-line tool for practicing coding challenges locally. Write solutions in Go, JavaScript, or TypeScript and test them against the same test cases used in the online platform.
+A command-line tool for practicing coding challenges locally. Write solutions in Go, JavaScript, TypeScript, or Python and test them against the same test cases used in the online platform.
 
 ## Features
 
-- **Multi-language support**: Go, JavaScript, and TypeScript
-- **Local testing**: Run tests without Docker - just needs Go and/or Node.js
+- **Multi-language support**: Go, JavaScript, TypeScript, and Python
+- **Local testing**: Run tests without Docker - just needs Go, Node.js, and/or Python
 - **Offline practice**: Download challenges and work on them locally
 - **Fast execution**: Native runtime execution for quick feedback
 - **Same test cases**: Uses identical test cases as the web platform
@@ -64,6 +64,7 @@ go install github.com/crisecheverria/codequest@latest
 
 - **Go 1.23+** (for Go challenges)
 - **Node.js 18+** (for JavaScript/TypeScript challenges)
+- **Python 3.8+** (for Python challenges)
 
 ## Usage
 
@@ -71,7 +72,8 @@ go install github.com/crisecheverria/codequest@latest
 
 ```bash
 codequest list
-codequest list --language go --difficulty easy
+codequest list --language python --difficulty easy
+codequest list --language go --difficulty medium
 ```
 
 ### Download a challenge
@@ -91,16 +93,16 @@ codequest test
 
 ```bash
 # List challenges
-codequest list --language go
+codequest list --language python
 
 # Download a challenge
-codequest fetch add-two-numbers-go
+codequest fetch python-list-comprehension
 
 # Move to the challenge directory
-cd add-two-numbers-go
+cd challenge-python-list-comprehension
 
 # Edit the solution file
-vim solution.go
+vim solution.py
 
 # Test your solution
 codequest test
@@ -111,11 +113,12 @@ codequest test
 - **Go**: Full support with native `go run` execution
 - **JavaScript**: Full support with Node.js execution
 - **TypeScript**: Basic support with type annotation removal
+- **Python**: Full support with native `python3` execution
 
 ## Challenge Structure
 
 Each challenge creates a workspace with:
-- `solution.go` / `solution.js` - Your solution file
+- `solution.go` / `solution.js` / `solution.py` - Your solution file
 - `README.md` - Challenge description and examples
 - `.challenge.json` - Challenge metadata (don't modify)
 

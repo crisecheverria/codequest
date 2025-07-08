@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(go build:*)",
+      "Bash(rm:*)",
+      "Bash(grep:*)",
+      "Bash(./codequest list)",
+      "Bash(./codequest list:*)",
+      "Bash(./codequest fetch python-variables-types)",
+      "Bash(./codequest fetch python-list-comprehension)"
+    ],
+    "deny": []
+  }
+}

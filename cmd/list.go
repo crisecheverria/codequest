@@ -28,7 +28,7 @@ var listCmd = &cobra.Command{
 }
 
 func init() {
-	listCmd.Flags().StringP("language", "l", "", "Filter by language (typescript, php, go)")
+	listCmd.Flags().StringP("language", "l", "", "Filter by language (typescript, javascript, go, python)")
 	listCmd.Flags().StringP("difficulty", "d", "", "Filter by difficulty (easy, medium, hard)")
 	rootCmd.AddCommand(listCmd)
 }
