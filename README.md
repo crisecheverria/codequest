@@ -2,7 +2,7 @@
 
 A command-line tool for practicing coding challenges locally. Write solutions in Go, JavaScript, TypeScript, or Python and test them against the same test cases used in the online platform [CodeQuest](https://quest.cristianecheverria.com).
 
-https://github.com/user-attachments/assets/d2e0150b-1f6e-446b-85fd-71abb2ef55e2
+https://github.com/user-attachments/assets/ef294547-5b82-4886-8a0e-60fef11a703f
 
 ## Features
 
